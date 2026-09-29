@@ -1,0 +1,140 @@
+signature,gene_symbol,origin,ensembl_stable_ids_from_cptac,has_cptac_ensembl_mapping
+antigen_presentation_mhc_i,HLA-A,Curated from canonical antigen-processing genes; v0.1 hypothesis set,,FALSE
+antigen_presentation_mhc_i,HLA-B,Curated from canonical antigen-processing genes; v0.1 hypothesis set,,FALSE
+antigen_presentation_mhc_i,HLA-C,Curated from canonical antigen-processing genes; v0.1 hypothesis set,ENSG00000204525,TRUE
+antigen_presentation_mhc_i,B2M,Curated from canonical antigen-processing genes; v0.1 hypothesis set,,FALSE
+antigen_presentation_mhc_i,TAP1,Curated from canonical antigen-processing genes; v0.1 hypothesis set,ENSG00000168394,TRUE
+antigen_presentation_mhc_i,TAP2,Curated from canonical antigen-processing genes; v0.1 hypothesis set,ENSG00000204267,TRUE
+antigen_presentation_mhc_i,TAPBP,Curated from canonical antigen-processing genes; v0.1 hypothesis set,,FALSE
+antigen_presentation_mhc_i,NLRC5,Curated from canonical antigen-processing genes; v0.1 hypothesis set,ENSG00000140853,TRUE
+antigen_presentation_mhc_i,PSMB8,Curated from canonical antigen-processing genes; v0.1 hypothesis set,ENSG00000204264,TRUE
+antigen_presentation_mhc_i,PSMB9,Curated from canonical antigen-processing genes; v0.1 hypothesis set,,FALSE
+antigen_presentation_mhc_i,PSMB10,Curated from canonical antigen-processing genes; v0.1 hypothesis set,ENSG00000205220,TRUE
+antigen_presentation_mhc_i,ERAP1,Curated from canonical antigen-processing genes; v0.1 hypothesis set,ENSG00000164307,TRUE
+antigen_presentation_mhc_i,ERAP2,Curated from canonical antigen-processing genes; v0.1 hypothesis set,ENSG00000164308,TRUE
+antigen_presentation_mhc_i,CALR,Curated from canonical antigen-processing genes; v0.1 hypothesis set,ENSG00000179218,TRUE
+antigen_presentation_mhc_i,CANX,Curated from canonical antigen-processing genes; v0.1 hypothesis set,ENSG00000127022,TRUE
+antigen_presentation_mhc_i,PDIA3,Curated from canonical antigen-processing genes; v0.1 hypothesis set,ENSG00000167004,TRUE
+antigen_presentation_mhc_ii,HLA-DRA,Curated from canonical MHC-II pathway genes; v0.1 hypothesis set,ENSG00000204287,TRUE
+antigen_presentation_mhc_ii,HLA-DRB1,Curated from canonical MHC-II pathway genes; v0.1 hypothesis set,ENSG00000196126,TRUE
+antigen_presentation_mhc_ii,HLA-DPA1,Curated from canonical MHC-II pathway genes; v0.1 hypothesis set,,FALSE
+antigen_presentation_mhc_ii,HLA-DPB1,Curated from canonical MHC-II pathway genes; v0.1 hypothesis set,,FALSE
+antigen_presentation_mhc_ii,HLA-DQA1,Curated from canonical MHC-II pathway genes; v0.1 hypothesis set,ENSG00000196735,TRUE
+antigen_presentation_mhc_ii,HLA-DQB1,Curated from canonical MHC-II pathway genes; v0.1 hypothesis set,ENSG00000179344,TRUE
+antigen_presentation_mhc_ii,HLA-DMA,Curated from canonical MHC-II pathway genes; v0.1 hypothesis set,ENSG00000204257,TRUE
+antigen_presentation_mhc_ii,HLA-DMB,Curated from canonical MHC-II pathway genes; v0.1 hypothesis set,,FALSE
+antigen_presentation_mhc_ii,CD74,Curated from canonical MHC-II pathway genes; v0.1 hypothesis set,ENSG00000019582,TRUE
+antigen_presentation_mhc_ii,CIITA,Curated from canonical MHC-II pathway genes; v0.1 hypothesis set,ENSG00000179583,TRUE
+antigen_presentation_mhc_ii,LGMN,Curated from canonical MHC-II pathway genes; v0.1 hypothesis set,ENSG00000100600,TRUE
+antigen_presentation_mhc_ii,CTSS,Curated from canonical MHC-II pathway genes; v0.1 hypothesis set,ENSG00000163131,TRUE
+ifn_gamma_response,IFNG,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,,FALSE
+ifn_gamma_response,STAT1,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000115415,TRUE
+ifn_gamma_response,IRF1,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000125347,TRUE
+ifn_gamma_response,IRF9,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,,FALSE
+ifn_gamma_response,JAK1,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000162434,TRUE
+ifn_gamma_response,JAK2,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000096968,TRUE
+ifn_gamma_response,CXCL9,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000138755,TRUE
+ifn_gamma_response,CXCL10,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000169245,TRUE
+ifn_gamma_response,CXCL11,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000169248,TRUE
+ifn_gamma_response,GBP1,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000117228,TRUE
+ifn_gamma_response,GBP2,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000162645,TRUE
+ifn_gamma_response,GBP5,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000154451,TRUE
+ifn_gamma_response,IDO1,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,,FALSE
+ifn_gamma_response,ISG15,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,,FALSE
+ifn_gamma_response,IFIT1,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000185745,TRUE
+ifn_gamma_response,IFIT2,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000119922,TRUE
+ifn_gamma_response,IFIT3,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000119917,TRUE
+ifn_gamma_response,MX1,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000157601,TRUE
+ifn_gamma_response,OAS1,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000089127,TRUE
+ifn_gamma_response,OAS2,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000111335,TRUE
+ifn_gamma_response,OAS3,Curated from Hallmark-like IFN response and antigen-response genes; v0.1 hypothesis set,ENSG00000111331,TRUE
+cytolytic_t_cell_context,CD8A,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,ENSG00000153563,TRUE
+cytolytic_t_cell_context,CD8B,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,ENSG00000172116,TRUE
+cytolytic_t_cell_context,GZMA,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,ENSG00000145649,TRUE
+cytolytic_t_cell_context,GZMB,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,ENSG00000100453,TRUE
+cytolytic_t_cell_context,GZMH,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,ENSG00000100450,TRUE
+cytolytic_t_cell_context,GZMK,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,ENSG00000113088,TRUE
+cytolytic_t_cell_context,PRF1,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,ENSG00000180644,TRUE
+cytolytic_t_cell_context,NKG7,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,,FALSE
+cytolytic_t_cell_context,GNLY,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,ENSG00000115523,TRUE
+cytolytic_t_cell_context,CTSW,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,ENSG00000172543,TRUE
+cytolytic_t_cell_context,CST7,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,ENSG00000077984,TRUE
+cytolytic_t_cell_context,CCL5,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,,FALSE
+cytolytic_t_cell_context,CXCR3,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,ENSG00000186810,TRUE
+cytolytic_t_cell_context,TRAC,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,ENSG00000277734,TRUE
+cytolytic_t_cell_context,TRBC1,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,ENSG00000211751,TRUE
+cytolytic_t_cell_context,TRBC2,Curated cytolytic lymphocyte marker genes; v0.1 hypothesis set,,FALSE
+checkpoint_exhaustion_context,PDCD1,Curated checkpoint/exhaustion marker genes; v0.1 hypothesis set,ENSG00000188389,TRUE
+checkpoint_exhaustion_context,CD274,Curated checkpoint/exhaustion marker genes; v0.1 hypothesis set,ENSG00000120217,TRUE
+checkpoint_exhaustion_context,PDCD1LG2,Curated checkpoint/exhaustion marker genes; v0.1 hypothesis set,ENSG00000197646,TRUE
+checkpoint_exhaustion_context,CTLA4,Curated checkpoint/exhaustion marker genes; v0.1 hypothesis set,,FALSE
+checkpoint_exhaustion_context,LAG3,Curated checkpoint/exhaustion marker genes; v0.1 hypothesis set,ENSG00000089692,TRUE
+checkpoint_exhaustion_context,HAVCR2,Curated checkpoint/exhaustion marker genes; v0.1 hypothesis set,ENSG00000135077,TRUE
+checkpoint_exhaustion_context,TIGIT,Curated checkpoint/exhaustion marker genes; v0.1 hypothesis set,ENSG00000181847,TRUE
+checkpoint_exhaustion_context,TOX,Curated checkpoint/exhaustion marker genes; v0.1 hypothesis set,ENSG00000198846,TRUE
+checkpoint_exhaustion_context,ENTPD1,Curated checkpoint/exhaustion marker genes; v0.1 hypothesis set,ENSG00000138185,TRUE
+checkpoint_exhaustion_context,CD80,Curated checkpoint/exhaustion marker genes; v0.1 hypothesis set,ENSG00000121594,TRUE
+checkpoint_exhaustion_context,CD86,Curated checkpoint/exhaustion marker genes; v0.1 hypothesis set,ENSG00000114013,TRUE
+checkpoint_exhaustion_context,ICOS,Curated checkpoint/exhaustion marker genes; v0.1 hypothesis set,ENSG00000163600,TRUE
+checkpoint_exhaustion_context,TNFRSF9,Curated checkpoint/exhaustion marker genes; v0.1 hypothesis set,,FALSE
+myeloid_inflammatory_context,LST1,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,,FALSE
+myeloid_inflammatory_context,LYZ,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,,FALSE
+myeloid_inflammatory_context,TYROBP,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,ENSG00000011600,TRUE
+myeloid_inflammatory_context,AIF1,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,,FALSE
+myeloid_inflammatory_context,FCGR3A,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,ENSG00000203747,TRUE
+myeloid_inflammatory_context,FCGR1A,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,ENSG00000150337,TRUE
+myeloid_inflammatory_context,CSF1R,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,ENSG00000182578,TRUE
+myeloid_inflammatory_context,ITGAM,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,ENSG00000169896,TRUE
+myeloid_inflammatory_context,CD68,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,ENSG00000129226,TRUE
+myeloid_inflammatory_context,CD163,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,ENSG00000177575,TRUE
+myeloid_inflammatory_context,MSR1,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,ENSG00000038945,TRUE
+myeloid_inflammatory_context,C1QA,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,ENSG00000173372,TRUE
+myeloid_inflammatory_context,C1QB,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,ENSG00000173369,TRUE
+myeloid_inflammatory_context,C1QC,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,ENSG00000159189,TRUE
+myeloid_inflammatory_context,IL1B,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,ENSG00000125538,TRUE
+myeloid_inflammatory_context,TNF,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,,FALSE
+myeloid_inflammatory_context,CXCL8,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,,FALSE
+myeloid_inflammatory_context,S100A8,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,,FALSE
+myeloid_inflammatory_context,S100A9,Curated monocyte/macrophage inflammatory marker genes; v0.1 hypothesis set,,FALSE
+tgfb_emt_exclusion_context,TGFB1,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000105329,TRUE
+tgfb_emt_exclusion_context,TGFBR1,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,,FALSE
+tgfb_emt_exclusion_context,TGFBR2,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000163513,TRUE
+tgfb_emt_exclusion_context,SMAD2,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000175387,TRUE
+tgfb_emt_exclusion_context,SMAD3,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000166949,TRUE
+tgfb_emt_exclusion_context,VIM,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000026025,TRUE
+tgfb_emt_exclusion_context,FN1,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000115414,TRUE
+tgfb_emt_exclusion_context,COL1A1,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000108821,TRUE
+tgfb_emt_exclusion_context,COL1A2,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000164692,TRUE
+tgfb_emt_exclusion_context,COL3A1,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000168542,TRUE
+tgfb_emt_exclusion_context,ACTA2,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000107796,TRUE
+tgfb_emt_exclusion_context,TAGLN,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,,FALSE
+tgfb_emt_exclusion_context,SERPINE1,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000106366,TRUE
+tgfb_emt_exclusion_context,THBS1,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000137801,TRUE
+tgfb_emt_exclusion_context,ITGA5,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000161638,TRUE
+tgfb_emt_exclusion_context,ITGB1,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000150093,TRUE
+tgfb_emt_exclusion_context,LOXL2,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000134013,TRUE
+tgfb_emt_exclusion_context,ZEB1,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000148516,TRUE
+tgfb_emt_exclusion_context,SNAI1,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000124216,TRUE
+tgfb_emt_exclusion_context,SNAI2,Curated stromal/TGF-beta/EMT marker genes; v0.1 hypothesis set,ENSG00000019549,TRUE
+proteasome_antigen_processing,PSMB8,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000204264,TRUE
+proteasome_antigen_processing,PSMB9,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,,FALSE
+proteasome_antigen_processing,PSMB10,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000205220,TRUE
+proteasome_antigen_processing,PSME1,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000092010,TRUE
+proteasome_antigen_processing,PSME2,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000100911,TRUE
+proteasome_antigen_processing,PSME3,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000131467,TRUE
+proteasome_antigen_processing,PSMA1,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000129084,TRUE
+proteasome_antigen_processing,PSMA2,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,,FALSE
+proteasome_antigen_processing,PSMA3,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000100567,TRUE
+proteasome_antigen_processing,PSMA4,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000041357,TRUE
+proteasome_antigen_processing,PSMA5,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000143106,TRUE
+proteasome_antigen_processing,PSMA6,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000100902,TRUE
+proteasome_antigen_processing,PSMA7,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,,FALSE
+proteasome_antigen_processing,PSMB1,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000008018,TRUE
+proteasome_antigen_processing,PSMB2,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000126067,TRUE
+proteasome_antigen_processing,PSMB3,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,,FALSE
+proteasome_antigen_processing,PSMB4,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000159377,TRUE
+proteasome_antigen_processing,PSMB5,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,,FALSE
+proteasome_antigen_processing,PSMB6,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000142507,TRUE
+proteasome_antigen_processing,PSMB7,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,ENSG00000136930,TRUE
+proteasome_antigen_processing,UBC,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,,FALSE
+proteasome_antigen_processing,UBB,Curated proteasome and antigen-processing machinery genes; v0.1 hypothesis set,,FALSE

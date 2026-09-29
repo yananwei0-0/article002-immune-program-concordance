@@ -1,0 +1,38 @@
+{
+  "release": "1.0.0-rc1",
+  "validated_on": "2026-09-29",
+  "technical_validation": "PASS",
+  "public_release_ready": false,
+  "workbook_sheets": 23,
+  "data_sheets": 22,
+  "csv_exports": 22,
+  "figure_counts": {
+    "PNG_300dpi": 10,
+    "SVG_editable": 10,
+    "TIFF_600dpi": 10
+  },
+  "scientific_invariants": {
+    "cptac_registered": 160,
+    "cptac_evaluable": 129,
+    "rna_protein_positive": 77,
+    "rna_protein_q_lt_0_05": 76,
+    "rna_phosphoprotein_positive": 52,
+    "rna_phosphoprotein_q_lt_0_05": 52,
+    "tcga_registry": 5440,
+    "tcga_q_lt_0_05": 4850,
+    "single_cell_registry": 336,
+    "spatial_registry": 24
+  },
+  "portability_and_secret_scan": {
+    "absolute_path_hits": 0,
+    "secret_hits": 0
+  },
+  "remaining_blockers": [
+    "author metadata",
+    "final license",
+    "source-terms confirmation",
+    "repository URL",
+    "archived release DOI",
+    "final CITATION.cff"
+  ]
+}

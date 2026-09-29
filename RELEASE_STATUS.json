@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0-rc1",
+  "release_candidate_date": "2026-09-29",
+  "technical_validation": "PASS",
+  "scientific_content_alignment": "reviewed",
+  "public_release_ready": false,
+  "blocking_items": [
+    "author metadata",
+    "final license",
+    "source-terms confirmation",
+    "repository URL",
+    "archived release DOI",
+    "final CITATION.cff"
+  ]
+}

@@ -1,0 +1,11 @@
+figure,file_stem,source_sheets,output_content
+Figure 1,Fig1_CPTAC_primary_concordance,S3_Primary,CPTAC RNA–protein and RNA–phosphoprotein correlation heatmaps
+Figure 2,Fig2_heterogeneity_and_scoring_robustness,S3_Primary;Derived_Heterogeneity;S4a_FeatureSens,Cancer-level estimates heterogeneity and scoring sensitivity
+Figure 3,Fig3_TCGA_and_APOLLO_triangulation,S6b_TCGA_Summary;S7_APOLLO,TCGA locked-pair alignment and APOLLO concordance
+Figure 4,Fig4_single_cell_and_spatial_compartments,S8b_scRNA_Source;S9_Spatial_BRCA,Source-bounded single-cell support and BRCA Visium contrasts
+Figure S1,FigS1_complete_pair_counts,S3_Primary,Complete matched-pair counts and evaluability gate
+Figure S2,FigS2_residual_context_support,S5_ResidualContext,RNA-adjusted residual-context support
+Figure S3,FigS3_TCGA_full_correlation_atlas,S6a_TCGA_Full;S6c_TCGA_Anchors,Complete 68-metric TCGA correlation atlas and fixed anchors
+Figure S4,FigS4_TCGA_immune_subtypes,S6d_TCGA_Subtypes,TCGA immune-subtype program-score heatmap
+Figure S5,FigS5_source_resolved_single_cell,S8b_scRNA_Source;Source_Alias,Source-resolved donor-aware single-cell contrasts
+Figure S6,FigS6_threshold_and_influence_sensitivities,S3_Primary;S4b_Threshold1,Score-recovery threshold and leave-one-case influence sensitivities

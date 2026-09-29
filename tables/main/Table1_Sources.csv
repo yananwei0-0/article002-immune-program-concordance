@@ -1,0 +1,7 @@
+Data source and scope,Inference unit,Measurements,Role,Boundary
+CPTAC (10 cancers; 1023 unique matched cases*),Patient/case,RNA + protein ± phosphoprotein,Primary within-cancer concordance,"No clinical, causal, or pan-cancer pooled-effect claim"
+TCGA (10 cancers; 4780 selected; 4652 correlation-complete†),Primary-tumor patient,RNA + 68 immune signatures + immune subtype,RNA-level construct-alignment analysis,Not matched cross-omic validation
+APOLLO-LUAD (n=87),Public sample unit,RNA + protein + phosphoprotein,Same-cancer multi-omic support,Not donor-proven independent replication
+APOLLO-OV (n=70),Public sample unit,RNA + protein,Same-cancer multi-omic support,Not donor-proven independent replication
+"Public scRNA/3CA (10 cancers; 345 donor units, 10 sources)",Source-specific donor × compartment,Single-cell RNA pseudobulk,Compartment localization,No global pooled test; no malignant-cell-origin claim
+BRCA Visium (4 samples),Paired sample × compartment median,Spatial transcriptomics,Spatial descriptive triangulation,No spot-level P value or independent-validation claim

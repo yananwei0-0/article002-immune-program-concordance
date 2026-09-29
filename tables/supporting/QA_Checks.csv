@@ -1,0 +1,27 @@
+Check,Status,Severity if failed,Evidence
+Primary registry has 160 fixed analysis rows,PASS,High,Observed 160 rows
+Primary inference keys are unique,PASS,High,Duplicate keys: 0
+Primary evaluable/not-evaluable split,PASS,High,Evaluable 129; not evaluable 31
+All primary exclusions have n<20,PASS,High,Maximum excluded n=18
+All evaluable rows meet n/distinct-value gate,PASS,High,Gate: n≥20 and ≥3 distinct values in each score
+Primary BCa confidence intervals contain rho,PASS,High,Checked all 129 evaluable rows
+Primary BH q values reproduce from p values,PASS,High,Single family across all finite primary p values
+Primary layer counts,PASS,High,Protein 77; phosphoprotein 52
+Primary FDR support counts,PASS,High,Protein 76/77; phosphoprotein 52/52
+Feature-row sensitivity sign concordance,PASS,High,Concordant 129/129
+Protein feature-row and gene-equal estimates are identical,PASS,High,Checked 77 rows
+Phosphoprotein feature-weighting delta summary,PASS,Medium,Median |Δρ|=0.019; max=0.265
+One-gene threshold sensitivity counts,PASS,High,Evaluable 158; q<0.05 157
+Residual registry counts,PASS,High,Rows 640; finite linear 516; finite rank 516
+Residual FDR support counts,PASS,High,Linear 35; rank 52
+TCGA registry has the complete 10 × 8 × 68 surface,PASS,High,"Rows 5440; dimensions (10, 8, 68)"
+TCGA inference keys are unique and complete,PASS,High,Duplicate keys 0; missing cells 0
+TCGA complete-pair sample sizes meet the gate and are stable within cancer,PASS,High,"Cancer-specific n values sum to 4,652; minimum n=153"
+TCGA BH q values reproduce across the full family,PASS,High,"Single Benjamini–Hochberg family across all 5,440 P values"
+TCGA asymptotic Spearman P values reproduce from rho and n,PASS,High,"All 5,440 values reproduced; 96 values underflowed to numerical zero"
+TCGA FDR-supported result count,PASS,High,"q<0.05: 4850/5,440"
+TCGA fixed-anchor summaries reproduce from the full registry,PASS,High,17 anchor links across 8 programs; matched program summaries 8/8
+APOLLO status counts,PASS,High,"{'supported': 11, 'not_evaluable': 7, 'null_result': 5, 'opposite': 1}"
+Single-cell source-bounded support counts,PASS,High,Main window 116; n≥10 sensitivity 85
+Spatial pairwise registry,PASS,High,Rows 24; paired n values [4]
+Program membership registry,PASS,High,139 program-gene rows; within-program duplicates 0

@@ -1,0 +1,49 @@
+signature,signature_label,immune_subtype,immune_subtype_short,n,meets_min_n_for_ordering,median_score,mean_score
+antigen_presentation_mhc_i,MHC-I,Wound Healing (Immune C1),Immune C1,1546,TRUE,-0.27742806300645406,-0.30933139679363003
+antigen_presentation_mhc_i,MHC-I,IFN-gamma Dominant (Immune C2),Immune C2,1605,TRUE,0.3937985455469335,0.38200940002453165
+antigen_presentation_mhc_i,MHC-I,Inflammatory (Immune C3),Immune C3,929,TRUE,-0.10542085442460114,-0.08843140050063258
+antigen_presentation_mhc_i,MHC-I,Lymphocyte Depleted (Immune C4),Immune C4,387,TRUE,-0.14593311708456547,-0.1721229968838301
+antigen_presentation_mhc_i,MHC-I,Immunologically Quiet (Immune C5),Immune C5,4,FALSE,-0.5455844972994525,-0.47315373416764095
+antigen_presentation_mhc_i,MHC-I,TGF-beta Dominant (Immune C6),Immune C6,123,TRUE,0.17416350145435025,0.1877344986379751
+antigen_presentation_mhc_ii,MHC-II,Wound Healing (Immune C1),Immune C1,1546,TRUE,-0.2705351893537683,-0.32517389603857705
+antigen_presentation_mhc_ii,MHC-II,IFN-gamma Dominant (Immune C2),Immune C2,1605,TRUE,0.35562009367399167,0.2713394438749558
+antigen_presentation_mhc_ii,MHC-II,Inflammatory (Immune C3),Immune C3,929,TRUE,0.151132245258255,0.11991750320130065
+antigen_presentation_mhc_ii,MHC-II,Lymphocyte Depleted (Immune C4),Immune C4,387,TRUE,-0.18753632850381882,-0.24625204706208265
+antigen_presentation_mhc_ii,MHC-II,Immunologically Quiet (Immune C5),Immune C5,4,FALSE,-1.420829081558622,-1.3999454772458861
+antigen_presentation_mhc_ii,MHC-II,TGF-beta Dominant (Immune C6),Immune C6,123,TRUE,0.5563101691908964,0.5818460349935232
+checkpoint_exhaustion_context,Checkpoint,Wound Healing (Immune C1),Immune C1,1546,TRUE,-0.2740364477540251,-0.27570114302813736
+checkpoint_exhaustion_context,Checkpoint,IFN-gamma Dominant (Immune C2),Immune C2,1605,TRUE,0.38307896880496267,0.33766716791292345
+checkpoint_exhaustion_context,Checkpoint,Inflammatory (Immune C3),Immune C3,929,TRUE,-0.004794280232693682,-0.02005971133254132
+checkpoint_exhaustion_context,Checkpoint,Lymphocyte Depleted (Immune C4),Immune C4,387,TRUE,-0.3986280731757166,-0.40422347890377197
+checkpoint_exhaustion_context,Checkpoint,Immunologically Quiet (Immune C5),Immune C5,4,FALSE,-1.6126613109939845,-1.5363042651542704
+checkpoint_exhaustion_context,Checkpoint,TGF-beta Dominant (Immune C6),Immune C6,123,TRUE,0.4045237726972207,0.40582885921244016
+cytolytic_t_cell_context,Cytolytic,Wound Healing (Immune C1),Immune C1,1546,TRUE,-0.25626220657912946,-0.2865826740060323
+cytolytic_t_cell_context,Cytolytic,IFN-gamma Dominant (Immune C2),Immune C2,1605,TRUE,0.40699455848582733,0.3647626872760993
+cytolytic_t_cell_context,Cytolytic,Inflammatory (Immune C3),Immune C3,929,TRUE,0.06178331710892011,0.039032580790296825
+cytolytic_t_cell_context,Cytolytic,Lymphocyte Depleted (Immune C4),Immune C4,387,TRUE,-0.6280938622045638,-0.5761840223019291
+cytolytic_t_cell_context,Cytolytic,Immunologically Quiet (Immune C5),Immune C5,4,FALSE,-2.1613895375985717,-2.3410174221093887
+cytolytic_t_cell_context,Cytolytic,TGF-beta Dominant (Immune C6),Immune C6,123,TRUE,0.261612786881096,0.26015442441146935
+ifn_gamma_response,IFN-gamma,Wound Healing (Immune C1),Immune C1,1546,TRUE,-0.39757504387831777,-0.4250956204658816
+ifn_gamma_response,IFN-gamma,IFN-gamma Dominant (Immune C2),Immune C2,1605,TRUE,0.536052513864661,0.5418193080500607
+ifn_gamma_response,IFN-gamma,Inflammatory (Immune C3),Immune C3,929,TRUE,-0.1389184269594319,-0.1391747130316193
+ifn_gamma_response,IFN-gamma,Lymphocyte Depleted (Immune C4),Immune C4,387,TRUE,-0.24732510130754243,-0.2518223059057031
+ifn_gamma_response,IFN-gamma,Immunologically Quiet (Immune C5),Immune C5,4,FALSE,-1.9579474541869883,-1.6800586976070737
+ifn_gamma_response,IFN-gamma,TGF-beta Dominant (Immune C6),Immune C6,123,TRUE,0.13912710383626642,0.16211880112035418
+myeloid_inflammatory_context,Myeloid,Wound Healing (Immune C1),Immune C1,1546,TRUE,-0.19891407857183857,-0.23806495701508373
+myeloid_inflammatory_context,Myeloid,IFN-gamma Dominant (Immune C2),Immune C2,1605,TRUE,0.2697223111801238,0.2194588303907461
+myeloid_inflammatory_context,Myeloid,Inflammatory (Immune C3),Immune C3,929,TRUE,0.013515030176057187,-0.020437513530852516
+myeloid_inflammatory_context,Myeloid,Lymphocyte Depleted (Immune C4),Immune C4,387,TRUE,-0.06274094382544065,-0.13173082344429818
+myeloid_inflammatory_context,Myeloid,Immunologically Quiet (Immune C5),Immune C5,4,FALSE,-1.7176110679194694,-2.129288927584825
+myeloid_inflammatory_context,Myeloid,TGF-beta Dominant (Immune C6),Immune C6,123,TRUE,0.5945350159377791,0.611795123195185
+proteasome_antigen_processing,Proteasome,Wound Healing (Immune C1),Immune C1,1546,TRUE,-0.16321021660605126,-0.11107272241596002
+proteasome_antigen_processing,Proteasome,IFN-gamma Dominant (Immune C2),Immune C2,1605,TRUE,0.2320440173660885,0.30493390929203884
+proteasome_antigen_processing,Proteasome,Inflammatory (Immune C3),Immune C3,929,TRUE,-0.3511976851827941,-0.30704556204703404
+proteasome_antigen_processing,Proteasome,Lymphocyte Depleted (Immune C4),Immune C4,387,TRUE,-0.11417770605422438,-0.04090912181840788
+proteasome_antigen_processing,Proteasome,Immunologically Quiet (Immune C5),Immune C5,4,FALSE,-0.07369711741588314,-0.17922623157675865
+proteasome_antigen_processing,Proteasome,TGF-beta Dominant (Immune C6),Immune C6,123,TRUE,-0.23734221727809793,-0.14090280253555962
+tgfb_emt_exclusion_context,TGF/EMT,Wound Healing (Immune C1),Immune C1,1546,TRUE,0.09492327143290047,0.08483735643008944
+tgfb_emt_exclusion_context,TGF/EMT,IFN-gamma Dominant (Immune C2),Immune C2,1605,TRUE,-0.06893296465513124,-0.07381193799088928
+tgfb_emt_exclusion_context,TGF/EMT,Inflammatory (Immune C3),Immune C3,929,TRUE,0.03974336960042539,0.014300127300850486
+tgfb_emt_exclusion_context,TGF/EMT,Lymphocyte Depleted (Immune C4),Immune C4,387,TRUE,-0.3271892951182104,-0.31368954821401424
+tgfb_emt_exclusion_context,TGF/EMT,Immunologically Quiet (Immune C5),Immune C5,4,FALSE,-1.6104334852449425,-1.5218953576130398
+tgfb_emt_exclusion_context,TGF/EMT,TGF-beta Dominant (Immune C6),Immune C6,123,TRUE,0.543812196726291,0.5667050427182098

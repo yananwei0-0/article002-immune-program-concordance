@@ -1,0 +1,14 @@
+# Exact versions reported in the current manuscript for the upstream analysis environment
+Python 3.14.6
+NumPy 2.5.1
+pandas 3.0.5
+SciPy 1.18.0
+h5py 3.16.0
+matplotlib 3.11.1
+openpyxl 3.1.5
+Pillow 12.3.0
+
+# Note
+# requirements.txt contains portable dependency ranges for the plotting and table-export layer.
+# requirements-lock.txt records the exact environment used for this release candidate.
+# SciPy and h5py are not imported by plot_all_figures.py.

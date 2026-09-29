@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or its derived figures, please cite the associated article and archived release."
+title: "Article 002 publication-figure reproducibility package"
+type: software
+version: "1.0.0"
+date-released: "[YYYY-MM-DD]"
+authors:
+  - family-names: "[Family name]"
+    given-names: "[Given names]"
+repository-code: "[GitHub repository URL]"
+doi: "[Archived release DOI]"
+preferred-citation:
+  type: article
+  title: "RNA–protein and RNA–phosphoprotein concordance of tumor immune programs across ten CPTAC cancers"
+  authors:
+    - family-names: "[Family name]"
+      given-names: "[Given names]"
+  journal: "[Journal]"
+  year: "[Year]"
+  doi: "[Article DOI]"

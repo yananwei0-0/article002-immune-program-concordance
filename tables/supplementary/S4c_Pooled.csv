@@ -1,0 +1,17 @@
+comparison_layer,program,program_label,contributing_cancer_n,pooled_complete_n,within_cancer_standardized_pooled_spearman_rho,interpretation_boundary
+proteomics,antigen_presentation_mhc_i,MHC-I,10,1023,0.7372855710835232,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+proteomics,antigen_presentation_mhc_ii,MHC-II,10,1023,0.7921677211500937,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+proteomics,ifn_gamma_response,IFN-gamma,10,1023,0.866281400913768,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+proteomics,cytolytic_t_cell_context,Cytolytic,9,859,0.794555783983729,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+proteomics,checkpoint_exhaustion_context,Checkpoint,8,550,0.6497674733109561,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+proteomics,myeloid_inflammatory_context,Myeloid,10,1023,0.708045804346173,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+proteomics,tgfb_emt_exclusion_context,TGF/EMT,10,1023,0.7741801652142599,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+proteomics,proteasome_antigen_processing,Proteasome,10,1023,0.31878700884428207,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+phosphoproteomics,antigen_presentation_mhc_i,MHC-I,10,916,0.5362923182529191,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+phosphoproteomics,antigen_presentation_mhc_ii,MHC-II,0,0,,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+phosphoproteomics,ifn_gamma_response,IFN-gamma,10,966,0.6908384302754919,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+phosphoproteomics,cytolytic_t_cell_context,Cytolytic,0,0,,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+phosphoproteomics,checkpoint_exhaustion_context,Checkpoint,8,423,0.6889877809720046,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+phosphoproteomics,myeloid_inflammatory_context,Myeloid,4,319,0.6435174779677058,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+phosphoproteomics,tgfb_emt_exclusion_context,TGF/EMT,10,1023,0.6557349720195292,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
+phosphoproteomics,proteasome_antigen_processing,Proteasome,10,1023,0.3540423324328124,Descriptive standardized pooled sensitivity; cancer-specific estimates remain primary.
