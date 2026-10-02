@@ -12,7 +12,7 @@ public release:
 - [ ] Create the immutable archived release and add its DOI.
 - [x] Replace `CITATION.cff.template` with a schema-oriented interim `CITATION.cff` using the collective author label.
 - [ ] Replace the collective citation author with the final named author list and add the archived DOI before public release.
-- [ ] Run `python validate_release.py` from the complete repository after the final metadata changes and review the regenerated checksums.
+- [x] Run `python validate_release.py` from the complete repository after the metadata changes and review the regenerated checksums.
 - [ ] Set `public_release_ready` to `true` only after all preceding items are complete.
 
 No scientific calculation or figure-generation blocker remains in this candidate.

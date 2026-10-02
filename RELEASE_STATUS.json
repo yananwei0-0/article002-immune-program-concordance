@@ -9,12 +9,13 @@
     "scoped dual license",
     "source-terms and non-redistribution audit",
     "repository URL",
-    "interim CITATION.cff"
+    "interim CITATION.cff",
+    "full technical validation rerun"
   ],
   "blocking_items": [
     "review-anonymity decision and named author metadata",
     "archived release DOI",
     "final named-author and DOI citation metadata",
-    "full final validation rerun"
+    "repository public-visibility decision"
   ]
 }

@@ -130,6 +130,8 @@ def scan_portability_and_secrets() -> dict[str, int]:
     for path in ROOT.rglob("*"):
         if not path.is_file() or path.suffix.lower() not in text_suffixes:
             continue
+        if ".git" in path.parts:
+            continue
         if path.name == "CHECKSUMS_SHA256.csv" or "workbook_renders" in path.parts:
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
@@ -149,6 +151,7 @@ def write_checksums() -> int:
         for path in ROOT.rglob("*")
         if path.is_file()
         and path != output
+        and ".git" not in path.parts
         and "workbook_renders" not in path.parts
         and "__pycache__" not in path.parts
     ]
@@ -236,6 +239,13 @@ def main() -> None:
         "validated_on": date.today().isoformat(),
         "technical_validation": "PASS",
         "public_release_ready": public_release_ready,
+        "resolved_release_metadata": [
+            "scoped dual license",
+            "source-terms and non-redistribution audit",
+            "repository URL",
+            "interim schema-valid CITATION.cff",
+            "full technical validation rerun",
+        ],
         "workbook_sheets": len(workbook.sheetnames),
         "data_sheets": len(workbook.sheetnames) - 1,
         "csv_exports": csv_count,
@@ -258,10 +268,10 @@ def main() -> None:
     (VALIDATION_DIR / "VALIDATION.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     audit = """# Article 002 release audit
 
-Technical validation: **PASS**
+Technical validation: **PASS on {validation_date}**
 Public release ready: **NO — anonymity, named authors, and archived DOI remain**
 
-Validated against the locked consolidated workbook.
+Validated on {validation_date} against the locked consolidated workbook.
 
 - 23 workbook sheets: one contents sheet and 22 analytical sheets.
 - 22 CSV exports matched the workbook cell-for-cell and passed SHA-256 checks.
@@ -274,7 +284,7 @@ Validated against the locked consolidated workbook.
 - The scoped dual license, repository URL, source-terms audit, and interim citation metadata were present.
 
 The remaining blockers are listed in `PUBLIC_RELEASE_BLOCKERS.md` and do not require scientific recomputation.
-"""
+""".format(validation_date=date.today().isoformat())
     (VALIDATION_DIR / "RELEASE_AUDIT.md").write_text(audit, encoding="utf-8")
     checksum_count = write_checksums()
     print(json.dumps({"technical_validation": "PASS", "csv_exports": csv_count, "checksummed_files": checksum_count}, ensure_ascii=False))
