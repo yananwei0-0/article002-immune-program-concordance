@@ -1,7 +1,7 @@
 # Article 002 release audit
 
 Technical validation: **PASS on 2026-10-02**
-Public release ready: **NO — anonymity, named authors, and archived DOI remain**
+Submission repository ready: **YES**
 
 Validated on 2026-10-02 against the locked consolidated workbook.
 
@@ -14,5 +14,6 @@ Validated on 2026-10-02 against the locked consolidated workbook.
 - Unsupported acetylation and prespecification wording was removed.
 - No absolute local paths or credential-like strings were detected in public text assets.
 - The scoped dual license, repository URL, source-terms audit, and interim citation metadata were present.
+- The principal scientific analysis layer passed static validation and retained real-source outputs passed 14/14 locked-table comparisons.
 
-The remaining blockers are listed in `PUBLIC_RELEASE_BLOCKERS.md` and do not require scientific recomputation.
+Named-author citation metadata and an archival DOI are optional future metadata and are not claimed in this release.

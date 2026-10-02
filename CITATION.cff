@@ -3,9 +3,9 @@ message: >-
   If you use this reproducibility package or its derived figures, cite this
   software package and the associated article when the article citation is
   available.
-title: "Article 002 publication-figure reproducibility package"
+title: "Article 002 scientific-analysis and publication reproducibility package"
 type: software
-version: "1.0.0-rc2"
+version: "1.0.0-rc3"
 date-released: "2026-10-02"
 authors:
   - name: "Article 002 authors"

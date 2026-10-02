@@ -1,0 +1,21 @@
+{
+  "project": "BIO-05",
+  "status": "PASS",
+  "files_modified": 1,
+  "occurrences_parameterized": 66,
+  "transformations": [
+    {
+      "file": "definitions/BIO-05_V2_LOCKED_PROTOCOL.json",
+      "reason": "Remove machine-local provenance prefixes without changing scientific rules or numerical parameters.",
+      "original_sha256": "a3bc200faf24eefb1b89be08cb4b6804b81423f50c3337a430434e6015143fc3",
+      "public_sha256": "f419f5ac589bf6d6ec61abb6663a47a5114b86a7d82980327b298adccb46aefc",
+      "replacements": {
+        "research_workspace_prefix": "${SCI27_RESEARCH_ROOT}",
+        "data_workspace_prefix": "${SCI27_DATA_ROOT}",
+        "large_cache_prefix": "${SCI27_BIOBANK_ROOT}"
+      }
+    }
+  ],
+  "parse_failures": [],
+  "remaining_concrete_paths": []
+}

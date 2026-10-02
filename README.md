@@ -1,40 +1,75 @@
-# Article 002 — publication-figure reproducibility release
+# Article 002 — scientific-analysis and publication reproducibility release
 
-Release candidate: `v1.0.0-rc2` (2026-10-02)
+Submission release candidate: `v1.0.0-rc3` (2026-10-02)
 
-This repository candidate reproduces the four main figures, six supplementary figures, and 22 machine-readable analytical tables for:
+Public repository: <https://github.com/yananwei0-0/article002-immune-program-concordance>
+
+This repository reproduces the principal scientific result registries, four
+main figures, six supplementary figures, and 22 machine-readable analytical
+tables for:
 
 > RNA–protein and RNA–phosphoprotein concordance of tumor immune programs across ten CPTAC cancers
 
-The technical package is complete and validated. The scoped dual license,
-source-terms audit, repository URL, and an interim machine-readable citation
-file are now present. The repository remains **private and not yet approved for
-public release** while review-anonymity requirements, named author metadata,
-and the archived release DOI remain unresolved. See
-`PUBLIC_RELEASE_BLOCKERS.md`.
-
 ## Reproducibility boundary
 
-This is the complete publication-figure and table-export layer. It reads already-computed, locked result registries and rebuilds the publication figures and CSV tables. It does not replace the upstream pipelines that derived scores, correlations, bootstrap intervals, multiple-testing corrections, or compartment contrasts from raw molecular data.
+The release contains two connected layers:
 
-No raw participant-, donor-, cell-, or facility-level data are redistributed here.
+1. `analysis/` recomputes the principal CPTAC, TCGA, APOLLO, single-cell/3CA,
+   and spatial statistics from prepared public-source matrices. It includes
+   program scoring, correlations, bootstrap intervals, conditional permutation
+   tests, BH correction, robustness analyses, and support-layer assembly.
+2. The repository-root scripts read the locked analytical workbook and rebuild
+   all publication figures and CSV tables.
+
+The upstream public molecular files are not redistributed, and source download
+and source-specific preparation are not fully automated. Official locators,
+expected file sizes, checksums where available, and the required input layout
+are documented. This is therefore a scientific-analysis reproduction package
+from prepared public inputs, not a redistribution of raw participant-, donor-,
+cell-, spot-, or facility-level data.
 
 ## Contents
 
+- `analysis/README.md` — scientific-analysis scope, execution, and parity gate.
+- `analysis/run_pipeline.py` — unified stage runner for the principal analyses.
+- `analysis/compare_recomputed_to_locked.py` — 14-registry numerical parity gate.
+- `analysis/definitions/` — fixed programs, public path-sanitized protocol, anchors, and mapping rules.
+- `analysis/input_manifests/` — public single-cell/spatial URLs, expected sizes, and relative landing paths.
 - `plot_all_figures.py` — validates the locked registries and generates all 10 figures.
 - `export_tables.py` — exports all 22 analytical worksheets as deterministic CSV files.
-- `data/Article2_Consolidated_Tables.xlsx` — consolidated numerical source with 23 worksheets: one contents sheet and 22 data sheets.
+- `data/Article2_Consolidated_Tables.xlsx` — 23-sheet consolidated numerical source.
 - `tables/` — three main-table CSVs, 16 supplementary-table CSVs, three supporting CSVs, and an export manifest.
 - `generated/` — PNG (300 dpi), editable SVG, TIFF (600 dpi), and a portable run manifest.
-- `previews/` — contact sheets for rapid visual review.
-- `manuscript/FULL_MANUSCRIPT_RELEASE_CANDIDATE.md` — corrected text with populated main tables and supplementary-table index.
-- `provenance/` — public source manifests and the single-cell/spatial citation maps.
-- `validation/` — machine-readable validation report and human-readable release audit.
-- `FIGURE_DATA_MAP.csv` — figure-to-worksheet mapping.
-- `requirements.txt` — portable dependency ranges.
-- `requirements-lock.txt` — exact tested plotting environment.
+- `manuscript/FULL_MANUSCRIPT_RELEASE_CANDIDATE.md` — corrected submission text with populated main tables and supplementary-table index.
+- `provenance/` and `analysis/provenance/` — source manifests, execution records, and numerical-parity evidence.
+- `validation/` and `analysis/validation/` — machine-readable release and analysis-layer audits.
 
-## Rebuild
+## Recompute the main analyses
+
+See `analysis/INPUT_LAYOUT.md`, then from the repository root:
+
+```bash
+python3 -m venv .venv-analysis
+source .venv-analysis/bin/activate
+python -m pip install -r analysis/environment/requirements.lock
+python -m pip install -e analysis
+
+python analysis/run_pipeline.py \
+  --stage all \
+  --data-root /path/to/prepared_cptac_tcga_project \
+  --external-root /path/to/public_external_inputs \
+  --analysis-root /path/to/recomputed_article002
+```
+
+Inspect the exact commands first by adding `--dry-run`. Individual stages may
+be selected with `--stage cptac`, `--stage tcga`, and so on.
+
+The final pipeline stage compares 14 recomputed registries directly with the
+locked release tables. Retained historical real-source outputs pass all 14
+comparisons, including all 5,440 TCGA correlations; the machine-readable report
+is `analysis/provenance/HISTORICAL_LOCKED_TABLE_PARITY.json`.
+
+## Rebuild figures and tables
 
 From the repository root:
 
@@ -45,26 +80,20 @@ python -m pip install -r requirements-lock.txt
 python plot_all_figures.py
 python export_tables.py
 python build_previews.py
+python analysis/validate_analysis_layer.py
 python validate_release.py
 ```
 
-For a broader compatible environment, install `requirements.txt` instead of the lock file. Generate a subset of figures with:
+Generate a subset of figures with:
 
 ```bash
 python plot_all_figures.py \
   --only Fig2_heterogeneity_and_scoring_robustness FigS3_TCGA_full_correlation_atlas
 ```
 
-Use a different workbook or output directory with:
-
-```bash
-python plot_all_figures.py --workbook /path/to/results.xlsx --outdir /path/to/figures
-```
-
 ## Validated invariants
 
-The release validation checks the following locked quantities:
-
+- 14/14 historical scientific registries match the locked publication tables column-for-column within declared numerical tolerances;
 - 160 CPTAC registered rows, including 129 evaluable rows;
 - 77 evaluable RNA–protein rows: all positive and 76 with `q < 0.05`;
 - 52 evaluable RNA–phosphoprotein rows: all positive and all with `q < 0.05`;
@@ -76,23 +105,15 @@ The release validation checks the following locked quantities:
 - 10 figures in each of the PNG, SVG, and TIFF output directories;
 - 22 CSV exports matching their workbook worksheets.
 
-## Data and provenance
+## Data, license, and citation
 
 Public source identities and file-level provenance are summarized in
-`DATA_ACCESS.md`, `DATA_SOURCES.md`, and `provenance/`. None of the 105 upstream
-assets in `provenance/SOURCE_MANIFEST_PUBLIC.csv` is present in the repository;
-all are marked `NOT_REDISTRIBUTED`. The source-family decisions and official
-terms routes are documented in `provenance/SOURCE_TERMS_AUDIT.md`.
-
-## License and citation
+`DATA_ACCESS.md`, `DATA_SOURCES.md`, and the two provenance directories. None of
+the upstream assets is redistributed.
 
 Repository software is licensed under MIT. Original figure artwork, table
 presentation, and documentation are licensed under CC BY 4.0, subject to the
-exclusions in `LICENSE.md`. Upstream data are not relicensed. The current
-`CITATION.cff` uses a collective author label to preserve review anonymity and
-will be updated with named authors and the archived release DOI before public
-release.
-
-## Release policy
-
-Do not make this candidate public or create a final GitHub/Zenodo release until every item in `PUBLIC_RELEASE_BLOCKERS.md` is resolved and `RELEASE_STATUS.json` is changed to `public_release_ready: true` after a final validation run.
+exclusions in `LICENSE.md`. Upstream data are not relicensed. `CITATION.cff`
+uses a collective author label so the code release can be cited without
+publishing personal author metadata; named authors and an archival DOI may be
+added later without changing the scientific outputs.

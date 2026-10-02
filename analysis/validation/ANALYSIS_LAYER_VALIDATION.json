@@ -1,0 +1,13 @@
+{
+  "generated_at_utc": "2026-10-02T13:38:34.628721+00:00",
+  "status": "PASS",
+  "required_files": 15,
+  "python_files_parsed": 30,
+  "input_queue_rows": 17,
+  "locked_table_parity": "14/14 PASS",
+  "portable_real_source_smoke": "PASS",
+  "protocol_sha256": "f419f5ac589bf6d6ec61abb6663a47a5114b86a7d82980327b298adccb46aefc",
+  "concrete_local_path_hits": 0,
+  "credential_like_hits": 0,
+  "boundary": "Static/public-package validation plus retained historical real-source parity; not a fresh download-and-clean rerun."
+}

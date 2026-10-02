@@ -1,0 +1,526 @@
+{
+  "project": "BIO-05",
+  "status": "PASS",
+  "failures": [],
+  "checks": {
+    "syntax": {
+      "errors": [],
+      "pass": true
+    },
+    "source_current_p1_immutable": {
+      "expected": "7ab1be4929eaa15030fc226b90172c5cbecbe69be42257470562112b83b5d5e2",
+      "observed": "7ab1be4929eaa15030fc226b90172c5cbecbe69be42257470562112b83b5d5e2",
+      "pass": true
+    },
+    "fresh_review_inventory": {
+      "declared": {
+        "P0": 0,
+        "P1": 4,
+        "P2": 0
+      },
+      "record_count": 4,
+      "unique_finding_ids": 4,
+      "all_required_fields": true,
+      "all_dispositions_valid": true,
+      "pass": true
+    },
+    "cross_freeze_review_inventory": {
+      "governing_review_path": "<LOCAL_PATH:BIO-05_CURRENT_P2_CROSS_FREEZE_RESPONSE.md>",
+      "expected_sha256": "11919a32ea9eb54d90f55b8a556881c0458b45aa00eaf29ca7b681c13951a88f",
+      "observed_sha256": "11919a32ea9eb54d90f55b8a556881c0458b45aa00eaf29ca7b681c13951a88f",
+      "declared": {
+        "P0": 0,
+        "P1": 2,
+        "P2": 1
+      },
+      "record_count": 3,
+      "severity_counts": {
+        "P0": 0,
+        "P1": 2,
+        "P2": 1
+      },
+      "unique_finding_ids": 3,
+      "unresolved": {
+        "P0": [],
+        "P1": [],
+        "P2": []
+      },
+      "pass": true
+    },
+    "mandatory_files": {
+      "files": [
+        "manuscript/BIO-05_METHODS_RESULTS_CURRENT_P2.md",
+        "current_p2_closure/CURRENT_P2_ADJUDICATION.json",
+        "current_p2_closure/CURRENT_P2_ADJUDICATION.md",
+        "current_p2_closure/CURRENT_P2_CLOSURE.json",
+        "current_p2_closure/CURRENT_P2_CLOSURE.md",
+        "current_p2_closure/NUMERIC_MAP_CURRENT_P2.csv",
+        "current_p2_closure/NUMERIC_GATE_CURRENT_P2.json",
+        "current_p2_closure/COMMANDS_RUN.txt",
+        "current_p2_closure/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv",
+        "cross_freeze_revision/CROSS_FREEZE_REVISION_1.json",
+        "cross_freeze_revision/CROSS_FREEZE_REVISION_1.md",
+        "current_p2_closure/TWO_PASS_DETERMINISTIC_HASHES_CURRENT_P2.json",
+        "current_p2_closure/build_current_p2_outputs.py",
+        "current_p2_closure/run_current_p2_gate.py"
+      ],
+      "missing": [],
+      "pass": true
+    },
+    "forbidden_language": {
+      "forbidden_patterns": {
+        "absolute_user_path": "/Users/",
+        "absolute_volume_path": "/Volumes/",
+        "todo_tbd": "\\b(?:TODO|TBD)\\b",
+        "author_placeholder": "(?i)\\b(?:insert author|author name|corresponding author|affiliation placeholder)\\b",
+        "internal_review_language": "(?i)\\b(?:P0|P1|P2|ACCEPTED|REJECTED_WITH_EVIDENCE|CONDITIONAL|READY_FOR_CROSS_FREEZE|fresh audit|adjudication|closure status)\\b",
+        "non_methods_results_sections": "(?m)^## (?:Introduction|Discussion|Abstract|Declarations|Cover Letter)\\b"
+      },
+      "forbidden_hits": {},
+      "pass": true
+    },
+    "semantic_hygiene": {
+      "forbidden_hits": {},
+      "has_methods": true,
+      "has_results": true,
+      "preserves_negative_boundaries": true,
+      "pass": true
+    },
+    "numeric_map": {
+      "manuscript_numeric_occurrences": 276,
+      "map_rows": 276,
+      "occurrence_inventory_exact": true,
+      "unique_occurrence_ids": true,
+      "fact_failures": [],
+      "display_failures": [],
+      "source_hash_failures": [],
+      "pass": true
+    },
+    "numeric_semantic_bindings": {
+      "required": {
+        "primary_min_distinct_values": {
+          "source_file": "code/run_cptac_v2.py",
+          "occurrence_count": 1
+        },
+        "residual_min_distinct_values": {
+          "source_file": "code/run_cptac_v2.py",
+          "occurrence_count": 1
+        },
+        "tcga_ddof": {
+          "source_file": "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_discovery_v0_1.py",
+          "occurrence_count": 1
+        },
+        "tcga_min_subtype_n": {
+          "source_file": "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_5_tcga_sensitivity.py",
+          "occurrence_count": 1
+        },
+        "tcga_min_program_genes": {
+          "source_file": "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_5_tcga_sensitivity.py",
+          "occurrence_count": 1
+        },
+        "tcga_q_cutoff": {
+          "source_file": "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_5_tcga_sensitivity.py",
+          "occurrence_count": 1
+        },
+        "tcga_anchor_rule_rows": {
+          "source_file": "current_p2_closure/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv",
+          "occurrence_count": 1
+        },
+        "apollo_min_program_genes": {
+          "source_file": "current_p2_closure/executed_code/run_bio05_apollo_external_cohort_v0_7.py",
+          "occurrence_count": 1
+        },
+        "apollo_min_distinct_values": {
+          "source_file": "code/postprocess_support_v2.py",
+          "occurrence_count": 1
+        },
+        "apollo_ci_percent": {
+          "source_file": "code/postprocess_support_v2.py",
+          "occurrence_count": 3
+        },
+        "scrna_cellxgene_min_group_cells": {
+          "source_file": "code/run_h5ad_support_v2.py",
+          "occurrence_count": 1
+        },
+        "scrna_cellxgene_min_program_genes": {
+          "source_file": "code/run_h5ad_support_v2.py",
+          "occurrence_count": 1
+        },
+        "scrna_3ca_min_group_cells": {
+          "source_file": "current_p2_closure/executed_code/run_bio05_3ca_source_mapping_v0_8.py",
+          "occurrence_count": 1
+        },
+        "scrna_3ca_min_program_genes": {
+          "source_file": "current_p2_closure/executed_code/run_bio05_3ca_source_mapping_v0_8.py",
+          "occurrence_count": 1
+        },
+        "scrna_support_q_cutoff": {
+          "source_file": "code/postprocess_support_v2.py",
+          "occurrence_count": 1
+        },
+        "spatial_min_program_genes": {
+          "source_file": "code/run_h5ad_support_v2.py",
+          "occurrence_count": 1
+        }
+      },
+      "observed": {
+        "primary_min_distinct_values": {
+          "row_count": 1,
+          "source_files": [
+            "code/run_cptac_v2.py"
+          ],
+          "source_locators": [
+            "evaluate_pair lines 468-495"
+          ]
+        },
+        "residual_min_distinct_values": {
+          "row_count": 1,
+          "source_files": [
+            "code/run_cptac_v2.py"
+          ],
+          "source_locators": [
+            "residual model gate lines 699-709"
+          ]
+        },
+        "tcga_ddof": {
+          "row_count": 1,
+          "source_files": [
+            "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_discovery_v0_1.py"
+          ],
+          "source_locators": [
+            "zscore_rows lines 404-408"
+          ]
+        },
+        "tcga_min_subtype_n": {
+          "row_count": 1,
+          "source_files": [
+            "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_5_tcga_sensitivity.py"
+          ],
+          "source_locators": [
+            "MIN_SUBTYPE_N line 65; subtype gate lines 327-350"
+          ]
+        },
+        "tcga_min_program_genes": {
+          "row_count": 1,
+          "source_files": [
+            "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_5_tcga_sensitivity.py"
+          ],
+          "source_locators": [
+            "compute_signature_scores lines 181-209"
+          ]
+        },
+        "tcga_q_cutoff": {
+          "row_count": 1,
+          "source_files": [
+            "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_5_tcga_sensitivity.py"
+          ],
+          "source_locators": [
+            "meta-summary line 304"
+          ]
+        },
+        "tcga_anchor_rule_rows": {
+          "row_count": 1,
+          "source_files": [
+            "current_p2_closure/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv"
+          ],
+          "source_locators": [
+            "all rows"
+          ]
+        },
+        "apollo_min_program_genes": {
+          "row_count": 1,
+          "source_files": [
+            "current_p2_closure/executed_code/run_bio05_apollo_external_cohort_v0_7.py"
+          ],
+          "source_locators": [
+            "MIN_SIGNATURE_GENES line 24; score_signature_matrix lines 113-125"
+          ]
+        },
+        "apollo_min_distinct_values": {
+          "row_count": 1,
+          "source_files": [
+            "code/postprocess_support_v2.py"
+          ],
+          "source_locators": [
+            "apollo_registry line 121"
+          ]
+        },
+        "apollo_ci_percent": {
+          "row_count": 3,
+          "source_files": [
+            "code/postprocess_support_v2.py"
+          ],
+          "source_locators": [
+            "spearman_ci lines 82-87"
+          ]
+        },
+        "scrna_cellxgene_min_group_cells": {
+          "row_count": 1,
+          "source_files": [
+            "code/run_h5ad_support_v2.py"
+          ],
+          "source_locators": [
+            "parse_args line 94; group gate lines 404-409"
+          ]
+        },
+        "scrna_cellxgene_min_program_genes": {
+          "row_count": 1,
+          "source_files": [
+            "code/run_h5ad_support_v2.py"
+          ],
+          "source_locators": [
+            "parse_args line 95; program gate lines 434-444"
+          ]
+        },
+        "scrna_3ca_min_group_cells": {
+          "row_count": 1,
+          "source_files": [
+            "current_p2_closure/executed_code/run_bio05_3ca_source_mapping_v0_8.py"
+          ],
+          "source_locators": [
+            "MIN_GROUP_CELLS line 23; group gate lines 234-244"
+          ]
+        },
+        "scrna_3ca_min_program_genes": {
+          "row_count": 1,
+          "source_files": [
+            "current_p2_closure/executed_code/run_bio05_3ca_source_mapping_v0_8.py"
+          ],
+          "source_locators": [
+            "MIN_SIGNATURE_GENES line 24; program gate lines 273-277"
+          ]
+        },
+        "scrna_support_q_cutoff": {
+          "row_count": 1,
+          "source_files": [
+            "code/postprocess_support_v2.py"
+          ],
+          "source_locators": [
+            "within-source support rules lines 287-295"
+          ]
+        },
+        "spatial_min_program_genes": {
+          "row_count": 1,
+          "source_files": [
+            "code/run_h5ad_support_v2.py"
+          ],
+          "source_locators": [
+            "parse_args line 95; spatial program gate lines 529-539"
+          ]
+        }
+      },
+      "binding_failures": [],
+      "obsolete_semantic_ids_present": [],
+      "pass": true
+    },
+    "corrected_reproducibility_values": {
+      "program_config_sha256": "b631094186b4f1a69f3e2ee8b948009f10f4b7ad0b644cd1cf446e4152c46ef1",
+      "program_rows": 139,
+      "program_count": 8,
+      "tcga_selection_rows": 4780,
+      "tcga_unique_patients": 4780,
+      "tcga_sample_type_codes": [
+        1
+      ],
+      "apollo_order_starts_with_collapse": true,
+      "spatial_fallback_complete": true,
+      "score_rule_sections": [
+        "tcga",
+        "apollo",
+        "single_cell_cellxgene",
+        "single_cell_3ca",
+        "spatial"
+      ],
+      "score_rule_sections_missing": [],
+      "tcga_anchor_rule_artifact": "current_p2_closure/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv",
+      "tcga_anchor_rule_count": 17,
+      "pass": true
+    },
+    "tcga_anchor_selection": {
+      "anchor_rows": 17,
+      "programs": 8,
+      "membership_match_all": true,
+      "summary_match_all": true,
+      "mapping_mismatches": [],
+      "aggregation_mismatches": [],
+      "pass": true
+    },
+    "retained_sensitivity_outcomes": {
+      "observed": {
+        "loco_rows": 129,
+        "loco_median_rho_min": 0.3169652855543113,
+        "loco_median_rho_max": 0.8575531770762768,
+        "loco_positive_fraction_min": 1.0,
+        "pooled_registered_rows": 16,
+        "pooled_finite_rows": 14,
+        "pooled_positive_rows": 14,
+        "pooled_rho_min": 0.318787008844282,
+        "pooled_rho_max": 0.866281400913768,
+        "scrna_n10_supported": 85,
+        "scrna_n10_positive": 31,
+        "scrna_n10_negative": 54
+      },
+      "expected": {
+        "loco_rows": 129,
+        "loco_median_rho_min": 0.3169652855543113,
+        "loco_median_rho_max": 0.8575531770762768,
+        "loco_positive_fraction_min": 1.0,
+        "pooled_registered_rows": 16,
+        "pooled_finite_rows": 14,
+        "pooled_positive_rows": 14,
+        "pooled_rho_min": 0.318787008844282,
+        "pooled_rho_max": 0.866281400913768,
+        "scrna_n10_supported": 85,
+        "scrna_n10_positive": 31,
+        "scrna_n10_negative": 54
+      },
+      "mismatches": [],
+      "pass": true
+    },
+    "spearman_algorithm": {
+      "tcga": {
+        "finite_rows": 5440,
+        "max_abs_p_difference": 2.6645352591003757e-15,
+        "pass": true
+      },
+      "apollo": {
+        "finite_rows": 17,
+        "max_abs_p_difference": 5.551115123125783e-16,
+        "pass": true
+      },
+      "pass": true
+    },
+    "apollo_ci_and_bh": {
+      "evaluable_rows": 17,
+      "ci_max_abs_difference": 1.3877787807814457e-16,
+      "q_max_abs_difference": 4.0939474033052647e-16,
+      "pass": true
+    },
+    "tcga_bh": {
+      "rows": 5440,
+      "unique_p_families": 1,
+      "max_abs_q_difference": 3.3306690738754696e-16,
+      "pass": true
+    },
+    "wilcoxon_recomputation": {
+      "recomputed_rows": 336,
+      "finite_rows": 256,
+      "max_abs_p_difference": 9.952975943416931e-17,
+      "max_abs_q_difference": 1.1102230246251565e-16,
+      "pass": true
+    },
+    "deterministic_regeneration": {
+      "runs": [
+        {
+          "pass": 1,
+          "builder_exit_code": 0,
+          "stdout": "{\n  \"project\": \"BIO-05\",\n  \"status\": \"BUILT_PENDING_GATE\",\n  \"p2_sha256\": \"bb0049fe2c1e1f1918aa52435d3d3772718112e6a03ea314db605e55fe1569cd\",\n  \"numeric_occurrences\": 276\n}",
+          "stderr": ""
+        },
+        {
+          "pass": 2,
+          "builder_exit_code": 0,
+          "stdout": "{\n  \"project\": \"BIO-05\",\n  \"status\": \"BUILT_PENDING_GATE\",\n  \"p2_sha256\": \"bb0049fe2c1e1f1918aa52435d3d3772718112e6a03ea314db605e55fe1569cd\",\n  \"numeric_occurrences\": 276\n}",
+          "stderr": ""
+        }
+      ],
+      "tracked_file_count": 17,
+      "tracked_files": [
+        "current_p2_closure/build_current_p2_outputs.py",
+        "current_p2_closure/run_current_p2_gate.py",
+        "manuscript/BIO-05_METHODS_RESULTS_CURRENT_P2.md",
+        "current_p2_closure/NUMERIC_MAP_CURRENT_P2.csv",
+        "current_p2_closure/PROGRAM_DEFINITION_CURRENT_P2.csv",
+        "current_p2_closure/SOFTWARE_ENVIRONMENT_CURRENT_P2.json",
+        "current_p2_closure/SUPPORT_MAPPING_RULES_CURRENT_P2.json",
+        "current_p2_closure/TCGA_PRIMARY_SAMPLE_SELECTION_CURRENT_P2.csv",
+        "current_p2_closure/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv",
+        "current_p2_closure/NUMERIC_DERIVATIONS_CURRENT_P2.json",
+        "current_p2_closure/CURRENT_P2_ADJUDICATION.json",
+        "current_p2_closure/CURRENT_P2_ADJUDICATION.md",
+        "current_p2_closure/COMMANDS_RUN.txt",
+        "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_discovery_v0_1.py",
+        "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_2_controls_rna_depmap.py",
+        "cross_freeze_revision/CROSS_FREEZE_REVISION_1.json",
+        "cross_freeze_revision/CROSS_FREEZE_REVISION_1.md"
+      ],
+      "pass_1_hashes": {
+        "current_p2_closure/build_current_p2_outputs.py": "73c303fa97396c58676487dd6e8be399c2d9094ee677a85699f1ea723fcc4d86",
+        "current_p2_closure/run_current_p2_gate.py": "942765ce2c1f763949524c24aa7fb020701bb791a9764e57d57eeb0dd5ada8af",
+        "manuscript/BIO-05_METHODS_RESULTS_CURRENT_P2.md": "bb0049fe2c1e1f1918aa52435d3d3772718112e6a03ea314db605e55fe1569cd",
+        "current_p2_closure/NUMERIC_MAP_CURRENT_P2.csv": "bc6bf73c1a8a7a2f2552ecbb4cf8cf4fd0ec99c0f1ac4ff6d9bcc880b68c9fc0",
+        "current_p2_closure/PROGRAM_DEFINITION_CURRENT_P2.csv": "b631094186b4f1a69f3e2ee8b948009f10f4b7ad0b644cd1cf446e4152c46ef1",
+        "current_p2_closure/SOFTWARE_ENVIRONMENT_CURRENT_P2.json": "a215094fdbcd01f15a9306eabcc11da4bf3fba8e00fa3ae4c5f9d6a7d4addd83",
+        "current_p2_closure/SUPPORT_MAPPING_RULES_CURRENT_P2.json": "3bfa2f111e448500f090fdf8177b2f629b5d2556820554446b7c61ddc4ea1898",
+        "current_p2_closure/TCGA_PRIMARY_SAMPLE_SELECTION_CURRENT_P2.csv": "ae58a204224e9525a58fc5a670898701aefb3ead69e9cd9aa079b235de77882b",
+        "current_p2_closure/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv": "bf22747d0649848267c823096622a0459a15b185d37e5287d0a1373750e630bd",
+        "current_p2_closure/NUMERIC_DERIVATIONS_CURRENT_P2.json": "e696be06cfa93e2e6f0cb5e39ce8b1d8094a2f4d98362c502c3f56b102b62e8f",
+        "current_p2_closure/CURRENT_P2_ADJUDICATION.json": "2043272b8ca61d83edfe9dc63fc4ff5ad5622f25531cc74a96898e62727c4ab9",
+        "current_p2_closure/CURRENT_P2_ADJUDICATION.md": "a7b4e7fbb8d8b4a7ded7ce35dc91966211528a62067e36eed227800b1d4403fc",
+        "current_p2_closure/COMMANDS_RUN.txt": "d4f29c9f2640f70a671461646c397807550435dc9469794b9d36e6026246f08a",
+        "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_discovery_v0_1.py": "79d050d282f361af325b03c248ed8c9044fda6f9dbea439a24c02c0a20944abf",
+        "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_2_controls_rna_depmap.py": "adeee39f677fe0e065d8be399f1b9e9702ce4cbbe7ab7ff0c60c13f53c7b3862",
+        "cross_freeze_revision/CROSS_FREEZE_REVISION_1.json": "89c24d89ba40ba5bd23c213a4f5bc375afacb50f950efaa58b8d043def0c3763",
+        "cross_freeze_revision/CROSS_FREEZE_REVISION_1.md": "2ebe7acf89ea78a3a5bd42c8df8a08a5120623d0099ee992083e90560b848196"
+      },
+      "pass_2_hashes": {
+        "current_p2_closure/build_current_p2_outputs.py": "73c303fa97396c58676487dd6e8be399c2d9094ee677a85699f1ea723fcc4d86",
+        "current_p2_closure/run_current_p2_gate.py": "942765ce2c1f763949524c24aa7fb020701bb791a9764e57d57eeb0dd5ada8af",
+        "manuscript/BIO-05_METHODS_RESULTS_CURRENT_P2.md": "bb0049fe2c1e1f1918aa52435d3d3772718112e6a03ea314db605e55fe1569cd",
+        "current_p2_closure/NUMERIC_MAP_CURRENT_P2.csv": "bc6bf73c1a8a7a2f2552ecbb4cf8cf4fd0ec99c0f1ac4ff6d9bcc880b68c9fc0",
+        "current_p2_closure/PROGRAM_DEFINITION_CURRENT_P2.csv": "b631094186b4f1a69f3e2ee8b948009f10f4b7ad0b644cd1cf446e4152c46ef1",
+        "current_p2_closure/SOFTWARE_ENVIRONMENT_CURRENT_P2.json": "a215094fdbcd01f15a9306eabcc11da4bf3fba8e00fa3ae4c5f9d6a7d4addd83",
+        "current_p2_closure/SUPPORT_MAPPING_RULES_CURRENT_P2.json": "3bfa2f111e448500f090fdf8177b2f629b5d2556820554446b7c61ddc4ea1898",
+        "current_p2_closure/TCGA_PRIMARY_SAMPLE_SELECTION_CURRENT_P2.csv": "ae58a204224e9525a58fc5a670898701aefb3ead69e9cd9aa079b235de77882b",
+        "current_p2_closure/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv": "bf22747d0649848267c823096622a0459a15b185d37e5287d0a1373750e630bd",
+        "current_p2_closure/NUMERIC_DERIVATIONS_CURRENT_P2.json": "e696be06cfa93e2e6f0cb5e39ce8b1d8094a2f4d98362c502c3f56b102b62e8f",
+        "current_p2_closure/CURRENT_P2_ADJUDICATION.json": "2043272b8ca61d83edfe9dc63fc4ff5ad5622f25531cc74a96898e62727c4ab9",
+        "current_p2_closure/CURRENT_P2_ADJUDICATION.md": "a7b4e7fbb8d8b4a7ded7ce35dc91966211528a62067e36eed227800b1d4403fc",
+        "current_p2_closure/COMMANDS_RUN.txt": "d4f29c9f2640f70a671461646c397807550435dc9469794b9d36e6026246f08a",
+        "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_discovery_v0_1.py": "79d050d282f361af325b03c248ed8c9044fda6f9dbea439a24c02c0a20944abf",
+        "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_2_controls_rna_depmap.py": "adeee39f677fe0e065d8be399f1b9e9702ce4cbbe7ab7ff0c60c13f53c7b3862",
+        "cross_freeze_revision/CROSS_FREEZE_REVISION_1.json": "89c24d89ba40ba5bd23c213a4f5bc375afacb50f950efaa58b8d043def0c3763",
+        "cross_freeze_revision/CROSS_FREEZE_REVISION_1.md": "2ebe7acf89ea78a3a5bd42c8df8a08a5120623d0099ee992083e90560b848196"
+      },
+      "hash_mismatches": [],
+      "pass": true
+    },
+    "source_after_regeneration": {
+      "observed": "7ab1be4929eaa15030fc226b90172c5cbecbe69be42257470562112b83b5d5e2",
+      "pass": true
+    }
+  },
+  "audited_files": [
+    "manuscript/BIO-05_METHODS_RESULTS_CURRENT_P2.md",
+    "current_p2_closure/CURRENT_P2_ADJUDICATION.json",
+    "current_p2_closure/CURRENT_P2_ADJUDICATION.md",
+    "current_p2_closure/CURRENT_P2_CLOSURE.json",
+    "current_p2_closure/CURRENT_P2_CLOSURE.md",
+    "current_p2_closure/NUMERIC_MAP_CURRENT_P2.csv",
+    "current_p2_closure/NUMERIC_GATE_CURRENT_P2.json",
+    "current_p2_closure/COMMANDS_RUN.txt",
+    "current_p2_closure/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv",
+    "cross_freeze_revision/CROSS_FREEZE_REVISION_1.json",
+    "cross_freeze_revision/CROSS_FREEZE_REVISION_1.md",
+    "current_p2_closure/TWO_PASS_DETERMINISTIC_HASHES_CURRENT_P2.json",
+    "current_p2_closure/build_current_p2_outputs.py",
+    "current_p2_closure/run_current_p2_gate.py",
+    "current_p2_closure/PROGRAM_DEFINITION_CURRENT_P2.csv",
+    "current_p2_closure/SUPPORT_MAPPING_RULES_CURRENT_P2.json",
+    "current_p2_closure/TCGA_PRIMARY_SAMPLE_SELECTION_CURRENT_P2.csv",
+    "current_p2_closure/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv",
+    "current_p2_closure/SOFTWARE_ENVIRONMENT_CURRENT_P2.json",
+    "current_p2_closure/NUMERIC_DERIVATIONS_CURRENT_P2.json",
+    "current_p2_closure/TWO_PASS_DETERMINISTIC_HASHES_CURRENT_P2.json",
+    "cross_freeze_revision/CROSS_FREEZE_REVISION_1.json",
+    "cross_freeze_revision/CROSS_FREEZE_REVISION_1.md",
+    "results/cptac/cptac_primary_concordance_registry_v2.csv",
+    "results/cptac/cptac_heterogeneity_summary_v2.csv",
+    "results/cptac/cptac_leave_one_cancer_out_v2.csv",
+    "results/cptac/cptac_within_cancer_standardized_pooled_sensitivity_v2.csv",
+    "results/tcga/tcga_xena_68immune_within_cancer_correlations_v0_5.csv",
+    "results/apollo/apollo_concordance_registry_v2.csv",
+    "results/scrna_combined/public_scrna_within_source_wilcoxon_registry_v2.csv",
+    "results/spatial/spatial_brca_pairwise_contrasts_v0_7.csv"
+  ]
+}

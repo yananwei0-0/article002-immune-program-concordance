@@ -1,0 +1,18 @@
+{
+  "version": "SCI27_INSTALLABLE_RELEASE_LOCK_V1",
+  "generated_at_utc": "2026-08-18T07:34:54.960620+00:00",
+  "python_index_used_for_resolution": "https://mirrors.aliyun.com/pypi/simple",
+  "r_repository_used_for_snapshot": "https://mirrors.tuna.tsinghua.edu.cn/CRAN/",
+  "project": "BIO-05",
+  "python_status": "PASS",
+  "python_returncode": 0,
+  "python_lock": "environment/requirements.lock",
+  "python_lock_sha256": "a73c708c9eab0b91b4f770f6ffcfa5088fa8fda3f5e82025c130ce14bc41e3c0",
+  "python_lock_bytes": 2142,
+  "r_status": "NOT_REQUIRED",
+  "r_packages": 0,
+  "r_lock": "",
+  "r_lock_sha256": "",
+  "status": "PASS",
+  "boundary": "Dependency resolution only. Numerical clean-run parity is a separate gate."
+}

@@ -1,0 +1,150 @@
+{
+  "generated_at_utc": "2026-10-02T13:29:14.496273+00:00",
+  "status": "PASS",
+  "comparisons_passed": 14,
+  "comparisons_total": 14,
+  "rtol": 1e-10,
+  "atol": 1e-12,
+  "comparisons": [
+    {
+      "name": "CPTAC primary",
+      "recomputed": "results/cptac/cptac_primary_concordance_registry_v2.csv",
+      "locked": "tables/supplementary/S3_Primary.csv",
+      "status": "PASS",
+      "expected_rows": 160,
+      "observed_rows": 160,
+      "compared_columns": 32,
+      "mismatches": []
+    },
+    {
+      "name": "CPTAC feature sensitivity",
+      "recomputed": "results/cptac/cptac_feature_row_sensitivity_registry_v2.csv",
+      "locked": "tables/supplementary/S4a_FeatureSens.csv",
+      "status": "PASS",
+      "expected_rows": 160,
+      "observed_rows": 160,
+      "compared_columns": 31,
+      "mismatches": []
+    },
+    {
+      "name": "CPTAC threshold sensitivity",
+      "recomputed": "results/cptac/cptac_threshold1_sensitivity_registry_v2.csv",
+      "locked": "tables/supplementary/S4b_Threshold1.csv",
+      "status": "PASS",
+      "expected_rows": 160,
+      "observed_rows": 160,
+      "compared_columns": 31,
+      "mismatches": []
+    },
+    {
+      "name": "CPTAC pooled sensitivity",
+      "recomputed": "results/cptac/cptac_within_cancer_standardized_pooled_sensitivity_v2.csv",
+      "locked": "tables/supplementary/S4c_Pooled.csv",
+      "status": "PASS",
+      "expected_rows": 16,
+      "observed_rows": 16,
+      "compared_columns": 7,
+      "mismatches": []
+    },
+    {
+      "name": "CPTAC residual diagnostics",
+      "recomputed": "results/cptac/cptac_residual_model_diagnostics_v2.csv",
+      "locked": "tables/supplementary/S4d_ResidualDiag.csv",
+      "status": "PASS",
+      "expected_rows": 158,
+      "observed_rows": 158,
+      "compared_columns": 18,
+      "mismatches": []
+    },
+    {
+      "name": "CPTAC residual context",
+      "recomputed": "results/cptac/cptac_residual_context_registry_v2.csv",
+      "locked": "tables/supplementary/S5_ResidualContext.csv",
+      "status": "PASS",
+      "expected_rows": 640,
+      "observed_rows": 640,
+      "compared_columns": 17,
+      "mismatches": []
+    },
+    {
+      "name": "TCGA full atlas",
+      "recomputed": "results/tcga/tcga_xena_68immune_within_cancer_correlations_v0_5.csv",
+      "locked": "tables/supplementary/S6a_TCGA_Full.csv",
+      "status": "PASS",
+      "expected_rows": 5440,
+      "observed_rows": 5440,
+      "compared_columns": 8,
+      "mismatches": []
+    },
+    {
+      "name": "TCGA program summary",
+      "recomputed": "results/tcga/tcga_xena_signature_summary_v0_5.csv",
+      "locked": "tables/supplementary/S6b_TCGA_Summary.csv",
+      "status": "PASS",
+      "expected_rows": 8,
+      "observed_rows": 8,
+      "compared_columns": 17,
+      "mismatches": []
+    },
+    {
+      "name": "TCGA fixed anchors",
+      "recomputed": "analysis/definitions/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv",
+      "locked": "tables/supplementary/S6c_TCGA_Anchors.csv",
+      "status": "PASS",
+      "expected_rows": 17,
+      "observed_rows": 17,
+      "compared_columns": 12,
+      "mismatches": []
+    },
+    {
+      "name": "TCGA immune subtypes",
+      "recomputed": "results/tcga/tcga_xena_immune_subtype_summary_v0_5.csv",
+      "locked": "tables/supplementary/S6d_TCGA_Subtypes.csv",
+      "status": "PASS",
+      "expected_rows": 48,
+      "observed_rows": 48,
+      "compared_columns": 8,
+      "mismatches": []
+    },
+    {
+      "name": "APOLLO",
+      "recomputed": "results/apollo/apollo_concordance_registry_v2.csv",
+      "locked": "tables/supplementary/S7_APOLLO.csv",
+      "status": "PASS",
+      "expected_rows": 24,
+      "observed_rows": 24,
+      "compared_columns": 15,
+      "mismatches": []
+    },
+    {
+      "name": "single-cell global",
+      "recomputed": "results/scrna_combined/public_scrna_global_wilcoxon_registry_v2.csv",
+      "locked": "tables/supplementary/S8a_scRNA_Global.csv",
+      "status": "PASS",
+      "expected_rows": 24,
+      "observed_rows": 24,
+      "compared_columns": 12,
+      "mismatches": []
+    },
+    {
+      "name": "single-cell source",
+      "recomputed": "results/scrna_combined/public_scrna_within_source_wilcoxon_registry_v2.csv",
+      "locked": "tables/supplementary/S8b_scRNA_Source.csv",
+      "status": "PASS",
+      "expected_rows": 336,
+      "observed_rows": 336,
+      "compared_columns": 15,
+      "mismatches": []
+    },
+    {
+      "name": "spatial BRCA",
+      "recomputed": "results/spatial/spatial_brca_pairwise_contrasts_v0_7.csv",
+      "locked": "tables/supplementary/S9_Spatial_BRCA.csv",
+      "status": "PASS",
+      "expected_rows": 24,
+      "observed_rows": 24,
+      "compared_columns": 6,
+      "mismatches": []
+    }
+  ]
+}

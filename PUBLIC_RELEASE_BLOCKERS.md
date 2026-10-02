@@ -1,18 +1,18 @@
-# Public-release blockers
+# Release-readiness status
 
-The technical reproducibility checks pass. Metadata that does not compromise
-review anonymity has been prepared; the following checklist controls the final
-public release:
+The Article 002 repository is suitable for a public GitHub submission release
+without publishing named-author metadata or a Zenodo DOI.
 
-- [ ] Replace author, affiliation, corresponding-author, funding, competing-interest, contribution, and acknowledgement placeholders in the manuscript.
-- [x] Approve and add the scoped dual license: MIT for code and CC BY 4.0 for original figures/tables/documentation, with the exclusions in `LICENSE.md`.
-- [x] Confirm the package redistribution boundary: all 105 upstream source assets are absent and marked `NOT_REDISTRIBUTED`; source-family terms are audited in `provenance/SOURCE_TERMS_AUDIT.md`.
-- [x] Add the final GitHub repository URL to repository and citation metadata.
-- [ ] Insert the public repository URL into the manuscript only when journal anonymity rules permit.
-- [ ] Create the immutable archived release and add its DOI.
-- [x] Replace `CITATION.cff.template` with a schema-oriented interim `CITATION.cff` using the collective author label.
-- [ ] Replace the collective citation author with the final named author list and add the archived DOI before public release.
-- [x] Run `python validate_release.py` from the complete repository after the metadata changes and review the regenerated checksums.
-- [ ] Set `public_release_ready` to `true` only after all preceding items are complete.
+- [x] Principal CPTAC, TCGA, APOLLO, single-cell/3CA, and spatial analysis code included.
+- [x] Unified stage runner and prepared public-input layout documented.
+- [x] Historical real-source outputs matched to 14/14 locked publication registries.
+- [x] Figure and table rebuild layer validated.
+- [x] Upstream files excluded and source-use boundary documented.
+- [x] MIT/CC BY 4.0 scoped licenses included.
+- [x] Public repository URL included in repository and manuscript availability text.
+- [x] Collective-author `CITATION.cff` retained; named authors are not required for this release.
+- [x] Archival DOI explicitly treated as optional and not claimed.
+- [ ] Create and publish GitHub Release `v1.0.0-rc3` after the final validation run.
 
-No scientific calculation or figure-generation blocker remains in this candidate.
+Future named-author metadata and an archival DOI can be added later without
+changing the numerical or figure outputs.

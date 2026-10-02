@@ -1,0 +1,363 @@
+{
+  "project": "BIO-05",
+  "program_configuration": {
+    "artifact": "current_p2_closure/PROGRAM_DEFINITION_CURRENT_P2.csv",
+    "sha256": "b631094186b4f1a69f3e2ee8b948009f10f4b7ad0b644cd1cf446e4152c46ef1",
+    "version": "v0_1",
+    "cptac_identifier_canonicalization": {
+      "gene_symbol": "strip whitespace and convert to uppercase",
+      "feature_identifier": "extract ENSG followed by digits and remove an optional dot-version suffix",
+      "mapping": "for each program gene, union all matrix rows matching any listed stable ENSG; average standardized matching rows within sample",
+      "unmapped_definition_rows": "retained in requested counts but do not enter CPTAC scores"
+    },
+    "cptac_standardization": {
+      "axis": "feature across eligible tumor samples within cancer and matrix",
+      "standard_deviation": "sample standard deviation (ddof=1)",
+      "zero_or_nonfinite_standard_deviation": "replace standard deviation with missing; resulting feature z-scores are missing",
+      "gene_collapse": "mean of all finite standardized feature rows mapped to a gene within sample",
+      "program_score": "equal-weight mean of finite gene-level values; require at least 3 nonmissing recovered genes",
+      "imputation": "none"
+    }
+  },
+  "tcga": {
+    "code_snapshot": {
+      "relative_path": "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_5_tcga_sensitivity.py",
+      "sha256": "219d3e3ca81377b897172830ce4741fb207beb9d97700b29d4de2858abcaf584",
+      "size_bytes": 30052
+    },
+    "score_helper_snapshot": {
+      "relative_path": "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_discovery_v0_1.py",
+      "sha256": "79d050d282f361af325b03c248ed8c9044fda6f9dbea439a24c02c0a20944abf",
+      "size_bytes": 41093
+    },
+    "selection_table": "current_p2_closure/TCGA_PRIMARY_SAMPLE_SELECTION_CURRENT_P2.csv",
+    "selection": {
+      "layer": "rna_expression",
+      "sample_type_code": 1,
+      "eligible_cancers": [
+        "BRCA",
+        "KIRC",
+        "COAD",
+        "GBM",
+        "HNSC",
+        "LUSC",
+        "LUAD",
+        "OV",
+        "PAAD",
+        "UCEC"
+      ],
+      "tie_break": "sort ascending by patient_id then sample_id; keep the first sample per patient"
+    },
+    "gene_mapping": "union of program gene-symbol row IDs and DepMap-derived Entrez row IDs that are present in the TCGA matrix",
+    "standardization": "within cancer, selected expression rows standardized across samples using sample standard deviation (ddof=1); zero/nonfinite standard deviations become missing",
+    "score_aggregation_and_missingness": {
+      "matrix_level_recovery_gate": "emit a program only when at least 3 mapped gene symbols are represented by present row IDs",
+      "program_score": "unweighted arithmetic mean across finite standardized selected expression rows for each patient (pandas mean with skipna=True)",
+      "sample_level_finite_gene_gate": "none beyond at least one finite standardized selected row; an all-missing row set yields a missing score",
+      "imputation": "none after the stated row mapping and standardization"
+    },
+    "anchor_selection": {
+      "source_snapshot": {
+        "relative_path": "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_2_controls_rna_depmap.py",
+        "sha256": "adeee39f677fe0e065d8be399f1b9e9702ce4cbbe7ab7ff0c60c13f53c7b3862",
+        "size_bytes": 48930
+      },
+      "artifact": "current_p2_closure/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv",
+      "anchor_count": 17,
+      "program_count": 8,
+      "anchors": {
+        "antigen_presentation_mhc_i": [
+          "MHC1_21978456",
+          "IFNG_score_21050467"
+        ],
+        "antigen_presentation_mhc_ii": [
+          "MHC2_21978456",
+          "TcClassII_score"
+        ],
+        "ifn_gamma_response": [
+          "IFNG_score_21050467",
+          "IFN_21978456",
+          "Module3_IFN_score"
+        ],
+        "cytolytic_t_cell_context": [
+          "CD8A",
+          "Tcell_21978456"
+        ],
+        "checkpoint_exhaustion_context": [
+          "PD1_PDL1_score",
+          "Tcell_21978456"
+        ],
+        "myeloid_inflammatory_context": [
+          "CD68",
+          "CSF1_response"
+        ],
+        "tgfb_emt_exclusion_context": [
+          "TGFB_score_21050467",
+          "TGFB_PCA_17349583"
+        ],
+        "proteasome_antigen_processing": [
+          "MHC1_21978456",
+          "IFN_21978456"
+        ]
+      },
+      "selection": "For each program, retain 68-immune meta-summary rows whose immune_signature_68 is in the fixed program-specific anchor list; selected_anchor_median_rho is the median of their median_within_cancer_rho values, and selected_anchor_min_positive_cancer_fraction is the minimum of their positive_cancer_fraction values.",
+      "validation": "All 17 configured anchors were present; membership, selected-anchor counts, median aggregation, and minimum-positive-fraction aggregation matched the retained signature summary for all 8 programs."
+    }
+  },
+  "apollo": {
+    "code_snapshot": {
+      "relative_path": "current_p2_closure/executed_code/run_bio05_apollo_external_cohort_v0_7.py",
+      "sha256": "80c9178104d3350b249b33e02418aa50e40e76e9268bf1a88f4891e057cbf4c5",
+      "size_bytes": 17686
+    },
+    "operation_order": {
+      "LUAD_RNA": [
+        "outer-union per-sample count-UQ tables by gene",
+        "fill absent gene/sample combinations with zero",
+        "apply log2(count+1)",
+        "uppercase gene symbols and average duplicate rows",
+        "z-standardize each gene across samples with ddof=0; zero/nonfinite standard deviations become missing",
+        "average recovered genes with equal weight"
+      ],
+      "LUAD_proteomics": [
+        "canonicalize sample identifiers",
+        "uppercase gene symbols and average duplicate rows",
+        "z-standardize each gene across samples with ddof=0; zero/nonfinite standard deviations become missing",
+        "average recovered genes with equal weight"
+      ],
+      "LUAD_phosphoproteomics": [
+        "retain relative columns and canonicalize sample identifiers",
+        "uppercase Primary_Gene values and average phosphosite rows within gene",
+        "z-standardize each collapsed gene across samples with ddof=0; zero/nonfinite standard deviations become missing",
+        "average recovered genes with equal weight"
+      ],
+      "OV_RNA_and_proteomics": [
+        "uppercase gene symbols and average duplicate rows",
+        "z-standardize each gene across samples with ddof=0; zero/nonfinite standard deviations become missing",
+        "average recovered genes with equal weight"
+      ]
+    },
+    "score_aggregation_and_missingness": {
+      "matrix_level_recovery_gate": "emit a program only when at least 3 program genes are present in the collapsed layer matrix",
+      "program_score": "unweighted arithmetic mean of finite standardized recovered-gene values within each sample (pandas mean with skipna=True)",
+      "sample_level_finite_gene_gate": "no additional three-finite-gene rule; at least one finite standardized recovered-gene value is sufficient",
+      "all_missing_rule": "if all recovered-gene standardized values are missing for a sample, its program score is missing and is removed by complete-case joining",
+      "imputation": "none after the explicitly documented LUAD RNA outer-union zero fill"
+    }
+  },
+  "single_cell_cellxgene": {
+    "code": {
+      "relative_path": "code/run_h5ad_support_v2.py",
+      "sha256": "2836e64a2c4b629e9fe62475646fc5f3613ea64fb96bf4ee01f5da5c72b7132f"
+    },
+    "field_selection": {
+      "donor": [
+        "donor_id",
+        "patient_id",
+        "participant_id",
+        "regex donor|patient|participant fallback"
+      ],
+      "cell_type": [
+        "cell_type",
+        "author_cell_type",
+        "regex cell.?type|cluster|annotation fallback"
+      ],
+      "disease": [
+        "disease",
+        "regex disease|cancer|tumour fallback"
+      ],
+      "tissue": [
+        "tissue",
+        "regex tissue|organ fallback"
+      ],
+      "actual_fields": "results/scrna/scrna_schema_audit_v0_7.csv"
+    },
+    "priority_order": [
+      "normal_cell_call=cancer -> malignant",
+      "normal_cell_call=normal and epithelial -> other",
+      "celltype_major exact cancer/immune/stromal/normal rules",
+      "dataset-specific other then malignant exact-value overrides",
+      "malignant then immune then stromal keyword rules",
+      "dataset-specific epithelial malignant fallback",
+      "otherwise other"
+    ],
+    "dataset_specific_malignant": {
+      "bc7397a3-ea49-4d57-84b8-80bd6885d4c4": [
+        "squamous epithelial cell"
+      ],
+      "0bebef1a-4607-4584-9070-dacf89a0d635": [
+        "epithelial cell of lung"
+      ]
+    },
+    "dataset_specific_other": {
+      "bc7397a3-ea49-4d57-84b8-80bd6885d4c4": [
+        "salivary gland glandular cell"
+      ]
+    },
+    "epithelial_fallback_source_literals_in_executed_code": [
+      "dea97145-f712-431c-a223-6b5f565f362a",
+      "4d82bd8e-8827-410b-96ae-2c806799c08c"
+    ],
+    "malignant_keywords": [
+      "abnormal cell",
+      "cancer epithelial",
+      "malignant",
+      "neoplastic",
+      "tumor",
+      "tumour"
+    ],
+    "immune_keywords": [
+      "b cell",
+      "dendritic",
+      "granulocyte",
+      "immune cell",
+      "lymphocyte",
+      "macrophage",
+      "mast cell",
+      "megakaryocyte",
+      "microgl",
+      "monocyte",
+      "myeloid",
+      "natural killer",
+      "neutrophil",
+      "nk",
+      "plasma cell",
+      "t cell"
+    ],
+    "stromal_keywords": [
+      "astrocyte",
+      "endothelial",
+      "fibroblast",
+      "mesangial",
+      "mural cell",
+      "myofibroblast",
+      "neuron",
+      "oligodendrocyte",
+      "oligodendrocyte precursor",
+      "pericyte",
+      "podocyte",
+      "radial glial",
+      "schwann",
+      "smooth muscle",
+      "stromal",
+      "support cell",
+      "vascular associated smooth muscle cell"
+    ],
+    "score_aggregation_and_missingness": {
+      "group_gate": "at least 20 cells per source-specific donor-cancer-compartment group",
+      "matrix_level_recovery_gate": "emit a program only when at least 3 program genes are present after duplicate-symbol collapse",
+      "program_score": "unweighted arithmetic mean of finite within-cancer standardized recovered-gene pseudobulk values (pandas mean with skipna=True)",
+      "sample_level_finite_gene_gate": "no additional three-finite-gene rule; an all-missing recovered-gene vector yields a missing donor-compartment score",
+      "imputation": "none"
+    }
+  },
+  "single_cell_3ca": {
+    "code_snapshot": {
+      "relative_path": "current_p2_closure/executed_code/run_bio05_3ca_source_mapping_v0_8.py",
+      "sha256": "209c8d1599f9eb41167f3603bbb68473ec0852f9035b1d215c85914b6bec3939",
+      "size_bytes": 17500
+    },
+    "imported_helper_snapshot": {
+      "relative_path": "current_p2_closure/executed_code/run_bio05_scrna_source_mapping_v0_7.py",
+      "sha256": "15a93697b3389414b7984f9ddbd2a71cfd0c76e5220c2a18d2a62b7d7a1e2c7c",
+      "size_bytes": 25603,
+      "source_manifest_itemized": false
+    },
+    "actual_fields": "results/threeca/threeca_schema_audit_v0_8.csv",
+    "pdac": {
+      "malignant": [
+        "malignant"
+      ],
+      "immune": [
+        "macrophage",
+        "t_cell",
+        "b_cell",
+        "mast"
+      ],
+      "stromal": [
+        "fibroblast",
+        "stellate",
+        "endothelial"
+      ]
+    },
+    "ucec": {
+      "malignant": [
+        "malignant"
+      ],
+      "immune": [
+        "macrophage",
+        "t_cell",
+        "b_cell",
+        "mast"
+      ],
+      "stromal": [
+        "fibroblast",
+        "endothelial",
+        "myocyte"
+      ]
+    },
+    "other_rule": "all unlisted normalized cell_type values -> other",
+    "score_aggregation_and_missingness": {
+      "group_gate": "at least 20 cells per source-specific donor-cancer-compartment group",
+      "matrix_level_recovery_gate": "emit a program only when at least 3 program genes are present after duplicate-symbol collapse",
+      "program_score": "unweighted arithmetic mean of finite within-cancer standardized recovered-gene pseudobulk values using the imported v0.7 helper (pandas mean with skipna=True)",
+      "sample_level_finite_gene_gate": "no additional three-finite-gene rule; an all-missing recovered-gene vector yields a missing donor-compartment score",
+      "imputation": "none"
+    }
+  },
+  "spatial": {
+    "code": {
+      "relative_path": "code/run_h5ad_support_v2.py",
+      "sha256": "2836e64a2c4b629e9fe62475646fc5f3613ea64fb96bf4ee01f5da5c72b7132f"
+    },
+    "score_columns": {
+      "malignant": [
+        "Cancer Basal SC",
+        "Cancer Cycling",
+        "Cancer Her2 SC",
+        "Cancer LumA SC",
+        "Cancer LumB SC"
+      ],
+      "immune": [
+        "B cells Memory",
+        "B cells Naive",
+        "Cycling T-cells",
+        "Cycling_Myeloid",
+        "DCs",
+        "Macrophage",
+        "Monocyte",
+        "NK cells",
+        "NKT cells",
+        "Plasmablasts",
+        "T cells CD4+",
+        "T cells CD8+"
+      ],
+      "stromal": [
+        "CAFs MSC iCAF-like",
+        "CAFs myCAF-like",
+        "Endothelial ACKR1",
+        "Endothelial CXCL12",
+        "Endothelial Lymphatic LYVE1",
+        "Endothelial RGS5",
+        "Myoepithelial",
+        "PVL Differentiated",
+        "PVL Immature"
+      ]
+    },
+    "assignment": [
+      "sum present columns within each of the three score groups, coercing nonnumeric/missing entries to zero",
+      "if the largest group score is positive, assign its argmax; ties follow malignant, immune, stromal insertion order",
+      "otherwise Classification=stroma -> stromal",
+      "otherwise Classification containing lymphocytes -> immune",
+      "otherwise Classification containing invasive cancer -> malignant",
+      "otherwise other"
+    ],
+    "score_aggregation_and_missingness": {
+      "matrix_level_recovery_gate": "emit a program only when at least 3 program genes are present in the spatial matrix",
+      "program_score": "per-spot unweighted numpy.nanmean across recovered genes after within-sample ddof=0 gene standardization",
+      "spot_level_finite_gene_gate": "no additional three-finite-gene rule; no finite recovered-gene z value yields a missing spot score",
+      "sample_compartment_summary": "pandas median of finite spot scores within sample and compartment; missing spot scores are skipped",
+      "imputation": "none"
+    }
+  }
+}

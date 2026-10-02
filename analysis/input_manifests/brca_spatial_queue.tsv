@@ -1,0 +1,5 @@
+source_type	source_id	title	url	remote_path	expected_size	notes
+cellxgene_spatial	aafb780d-f52d-4285-a1f4-57376cabe1ee	CID4290	https://datasets.cellxgene.cziscience.com/9c62cb12-39e5-4cf4-a030-802ef136d044.h5ad	spatial/cellxgene_brca_spatial_CID4290_20260730.h5ad	239296084	BRCA Visium sample from official breast atlas collection
+cellxgene_spatial	a6b0f655-820c-4082-98e2-42f33c2a71a7	CID44971	https://datasets.cellxgene.cziscience.com/58a6f5de-f847-495d-84a5-4766c76dcbc0.h5ad	spatial/cellxgene_brca_spatial_CID44971_20260730.h5ad	214365784	BRCA Visium sample from official breast atlas collection
+cellxgene_spatial	80466231-7133-4097-88ae-40cb6cce1a33	CID4465	https://datasets.cellxgene.cziscience.com/0fa1249e-a670-4534-b51c-69218dce7889.h5ad	spatial/cellxgene_brca_spatial_CID4465_20260730.h5ad	214168477	BRCA Visium sample from official breast atlas collection
+cellxgene_spatial	6f0858c0-c590-4740-b022-c152e7608d66	CID4535	https://datasets.cellxgene.cziscience.com/91d821e4-403c-4de8-bed8-f798ad33d93a.h5ad	spatial/cellxgene_brca_spatial_CID4535_20260730.h5ad	216294282	BRCA Visium sample from official breast atlas collection

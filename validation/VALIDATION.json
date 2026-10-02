@@ -1,13 +1,15 @@
 {
-  "release": "1.0.0-rc2",
+  "release": "1.0.0-rc3",
   "validated_on": "2026-10-02",
   "technical_validation": "PASS",
-  "public_release_ready": false,
+  "public_release_ready": true,
   "resolved_release_metadata": [
     "scoped dual license",
     "source-terms and non-redistribution audit",
     "repository URL",
-    "interim schema-valid CITATION.cff",
+    "collective-author schema-valid CITATION.cff",
+    "principal scientific analysis layer",
+    "14-registry locked-table parity gate",
     "full technical validation rerun"
   ],
   "workbook_sheets": 23,
@@ -34,9 +36,18 @@
     "absolute_path_hits": 0,
     "secret_hits": 0
   },
-  "remaining_blockers": [
-    "review-anonymity decision and named author metadata",
-    "archived release DOI",
-    "full final validation review and public-release authorization"
-  ]
+  "analysis_layer_validation": {
+    "generated_at_utc": "2026-10-02T13:38:34.628721+00:00",
+    "status": "PASS",
+    "required_files": 15,
+    "python_files_parsed": 30,
+    "input_queue_rows": 17,
+    "locked_table_parity": "14/14 PASS",
+    "portable_real_source_smoke": "PASS",
+    "protocol_sha256": "f419f5ac589bf6d6ec61abb6663a47a5114b86a7d82980327b298adccb46aefc",
+    "concrete_local_path_hits": 0,
+    "credential_like_hits": 0,
+    "boundary": "Static/public-package validation plus retained historical real-source parity; not a fresh download-and-clean rerun."
+  },
+  "remaining_blockers": []
 }

@@ -2,7 +2,12 @@
 
 Raw participant-, donor-, cell-, spot-, and facility-level files are not redistributed in this release candidate.
 
-The locked workbook and exported CSV files contain the aggregated analytical registries required to reproduce the publication figures. Public data should be retrieved from the official resources named in the manuscript and the following provenance files:
+The locked workbook and exported CSV files contain the aggregated analytical
+registries required to reproduce the publication figures. The principal
+scientific analyses can be rerun from prepared public-source matrices using
+`analysis/run_pipeline.py`; the required directory structure is documented in
+`analysis/INPUT_LAYOUT.md`. Public data should be retrieved from the official
+resources named in the manuscript and the following provenance files:
 
 - `provenance/SOURCE_MANIFEST_PUBLIC.csv` — file names, retained public URLs, byte sizes, checksums, and package redistribution status.
 - `provenance/SOURCE_TERMS_AUDIT.md` — source-family terms review and public-package decisions.

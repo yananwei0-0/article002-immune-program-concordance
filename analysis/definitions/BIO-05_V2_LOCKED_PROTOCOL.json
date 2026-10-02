@@ -1,0 +1,271 @@
+{
+  "locked_at": "2026-08-11T08:17:51.423605+00:00",
+  "lock_rule": "Protocol locked before any v2 result-generating command is run.",
+  "source_adjudication": "${SCI27_RESEARCH_ROOT}/outputs/manuscript27_v2_scientific_rebuild_20260811/protocol_adjudication/SCI27_V2_PROTOCOL_ADJUDICATION_AGGREGATE.json",
+  "project": "BIO-05",
+  "verdict": "READY_FOR_REANALYSIS",
+  "confidence": "moderate",
+  "files_read": [
+    "${SCI27_RESEARCH_ROOT}/obsidian_vault/10_给新对话的交接.md",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript27_v2_scientific_rebuild_20260811/design_audits/workers/03_BIO-05/attempt_1_last_message.json",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript27_v2_scientific_rebuild_20260811/SCI27_V2_REBUILD_RULES.md",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript27_two_pro_revision_cycle_20260810/post_reconciliation_final_gate/final_manuscripts/BIO-05_scientifically_reconciled_final.md",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript27_two_pro_revision_cycle_20260810/reconciled/BIO-05/BIO-05_SCIENTIFIC_RECONCILIATION_AUDIT.json",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript27_two_pro_revision_cycle_20260810/reconciled/BIO-05/BIO-05_DEEP_TABLE_REPAIR_AUDIT.md",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript27_two_pro_revision_cycle_20260810/reconciled/BIO-05/targeted_rerun_v0_4/summary.json",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/RUNBOOK.md",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/CODE_INVENTORY.csv",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/data/DATA_INVENTORY.csv",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/results/OUTPUT_INVENTORY.csv",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/CHECKSUMS_SHA256.csv",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/REPOSITORY_READINESS.json",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/environment/.env.example",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/environment/ENVIRONMENT_STATUS.md",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/environment/generated/requirements-direct.lock",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/environment/generated/PYTHON_RUNTIME.json",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_pan_cancer_proteomic_immune_evasion_v0_4_matched_rna_source_decomposition.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_pan_cancer_proteomic_immune_evasion_v0_5_tcga_sensitivity.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_bio05_apollo_external_cohort_v0_7.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_bio05_scrna_source_mapping_v0_7.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_bio05_3ca_source_mapping_v0_8.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_bio05_brca_spatial_triangulation_v0_7.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/build_bio05_round3_support_tables_v0_8.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/assemble_bio05_public_source_mapping_v0_8.py",
+    "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/04_processed/discovery_v0_4/cptac_bcm_transcriptomics_download_manifest_v0_4.csv",
+    "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/04_processed/first_pass_qc/cptac_processed_inventory_v0_1.csv",
+    "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/04_processed/first_pass_qc/scrna_reference_inventory_v0_1.csv",
+    "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/04_processed/public_pan_cancer_download_manifest_v0_1.csv",
+    "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/04_processed/harmonization_v0_1/cptac_sample_map_v0_1.csv",
+    "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/04_processed/harmonization_v0_1/cptac_case_layer_coverage_v0_1.csv",
+    "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/04_processed/harmonization_v0_1/harmonization_decision_table_v0_1.csv"
+  ],
+  "design_audit_source": "${SCI27_RESEARCH_ROOT}/outputs/manuscript27_v2_scientific_rebuild_20260811/design_audits/workers/03_BIO-05/attempt_1_last_message.json",
+  "issue_adjudications": [
+    {
+      "issue_id": "BIO05-P1-01",
+      "decision": "ACCEPT",
+      "rationale": "第一轮判断成立，但性质是P1主estimand定义风险，不是P0时间起点或样本独立性错误。v1把蛋白/磷蛋白定义为feature-row等权，而研究问题和RNA层是基因程序层；多个磷酸化位点会改变基因权重。v2应结果无关地改为基因等权主分析，feature-row作为敏感性。",
+      "evidence": "v1稿第45行定义RNA为恢复基因均值；第47行明确蛋白/磷蛋白每个mapped feature row等权，磷酸化位点不先折叠到基因；v0_4脚本第393-394行对row_indices直接nanmean；第47行稿件也承认这是feature-level estimand。",
+      "requires_reanalysis": true,
+      "protocol_consequence": "主分析锁定为按基因折叠后等权的RNA-蛋白/磷蛋白程序一致性；所有CPTAC score、相关、残差、汇总、表图和结论重新生成，旧显著性不得保留为目标。"
+    },
+    {
+      "issue_id": "BIO05-P1-02",
+      "decision": "ACCEPT",
+      "rationale": "第一轮判断成立，但不是当前v1结果已证明重复驱动的P0。现有审计显示最终表无重复；问题在于代码用many_to_many会在v2数据或规则变化时静默放大样本。v2必须把一病例一层一signature变成建模前硬断言。",
+      "evidence": "v0_4脚本第460-464行使用validate='many_to_many'合并RNA与蛋白层；第564行蛋白-磷蛋白合并也为many_to_many。协调审计JSON报告exact_duplicates=0、canonical_key_duplicates=0、unique_cases=1023，说明当前数据未显示重复伪重复。",
+      "requires_reanalysis": true,
+      "protocol_consequence": "v2预处理先做normalized_case_id生成、tumor-like过滤、重复优先级规则和唯一性断言；断言失败即停止，不允许继续产生主估计。"
+    },
+    {
+      "issue_id": "BIO05-P1-03",
+      "decision": "MODIFY",
+      "rationale": "第一轮指出固定效应Fisher-z不能作为正式pan-cancer效应是对的；但v1文本多处已称其为descriptive，所以它不是使主估计无效的问题。v2应把癌种内rho作为主输出；若保留跨癌种汇总，只能作为描述或另行加入随机效应敏感性。",
+      "evidence": "v1稿第57-59行称固定效应Fisher-z为descriptive；第122行和第188、212行均警告不能解释为同质pan-cancer coefficient。v0_4脚本第607-638行实现固定效应Fisher-z和I2，并在第637行写入描述性边界。",
+      "requires_reanalysis": true,
+      "protocol_consequence": "主estimand不包含单一pan-cancer pooled effect；v2表图以癌种内估计为主。若报告meta式汇总，必须标为二级并增加REML随机效应、Hartung-Knapp区间和prediction interval，或删除推断性meta语言。"
+    },
+    {
+      "issue_id": "BIO05-P1-04",
+      "decision": "MODIFY",
+      "rationale": "第一轮关于残差层不能支持机制识别成立；但v1正文已大幅降级机制表述，所以不是主估计无效。v2仍需把线性RNA调整残差列为二级描述，并加入非线性或rank残差敏感性，防止把线性残差误写成细胞来源或后转录机制。",
+      "evidence": "v0_4脚本第643-703行用最小二乘线性模型生成RNA-adjusted residual；第706-736行再与purity/ESTIMATE/CIBERSORT变量做Spearman相关。v1稿第94、218、276、313行均承认残差不能识别cell of origin、post-transcriptional regulation或malignant-cell-intrinsic mechanism。",
+      "requires_reanalysis": true,
+      "protocol_consequence": "残差分析降为二级；必须生成线性模型诊断和至少一种rank residual、spline/GAM或分位敏感性，并把机制、intrinsic、post-transcriptional结论降级为假设。"
+    },
+    {
+      "issue_id": "BIO05-P1-05",
+      "decision": "ACCEPT",
+      "rationale": "第一轮判断成立，属于证据等级和写作边界问题，不要求为此单独重跑主估计。TCGA是RNA-only，APOLLO缺供者级crosswalk，单细胞/空间层有同集合或供者深度限制，不能合称独立外部验证完整框架。",
+      "evidence": "v1稿第67、138行将TCGA定义为RNA-only sensitivity；第81、144、268、303行说明APOLLO无harmonized donor-level crosswalk；第83、170、234、311行说明BRCA spatial与单细胞为same-collection。APOLLO支持表脚本第406-448行还保留not_evaluable、supported、opposite、null_result状态。",
+      "requires_reanalysis": false,
+      "protocol_consequence": "claim boundary锁定为CPTAC主发现、TCGA RNA-only sensitivity、APOLLO same-cancer public proteomic support、single-cell source mapping、BRCA same-collection spatial triangulation；不得写external validation或independent replication of the framework。"
+    },
+    {
+      "issue_id": "BIO05-P1-06",
+      "decision": "MODIFY",
+      "rationale": "第一轮指出开放科学包内公共源身份未完全闭合是对的，但程度需修正：本地数据湖中CPTAC/TCGA/DepMap等有MD5/SHA和下载manifest，APOLLO与3CA源文件也实际存在；缺口主要是开放科学包的DATA_INVENTORY未把所有raw/public URL源文件哈希、版本和供者crosswalk整合成可发布manifest。因此不阻断协议定义，但必须作为v2执行前停止条件。",
+      "evidence": "开放科学包DATA_INVENTORY中DATA-001至DATA-010为public accession/source URL且sha256为空；同包REPOSITORY_READINESS.json列出CLEAN_ENVIRONMENT_EXECUTION_NOT_YET_RUN和PUBLIC_REPOSITORY_RELEASE_AND_DOI_NOT_ASSIGNED。相反，本地public_pan_cancer_download_manifest_v0_1.csv含TCGA、DepMap、CPTAC等size、md5、sha256记录；APOLLO五个源文件和3CA两个tar.gz在${SCI27_BIOBANK_ROOT}/topic_pool_cache下存在。",
+      "requires_reanalysis": false,
+      "protocol_consequence": "v2重算前必须冻结source manifest，覆盖URL/accession、下载日期、大小、hash、样本ID字段、版本、redistribution限制和crosswalk缺失说明；manifest不完整则停止执行支持层或主分析。"
+    },
+    {
+      "issue_id": "BIO05-P2-07",
+      "decision": "ACCEPT",
+      "rationale": "第一轮判断成立，属于报告可信度和时间戳证据问题。v1多处prespecified措辞存在，但本轮未读到早于旧分析执行的正式预注册或锁定协议；v2协议锁定后可写locked/defined for v2，不能回溯性写prespecified。",
+      "evidence": "v1稿第8、32、41、67、79、85、156、258、293行出现prespecified或同类先验措辞；v2总规则要求v2 correction protocol在对应结果运行前指定并时间戳化，旧PASS/CLOSED或数字不变不能作为有效性证据。",
+      "requires_reanalysis": false,
+      "protocol_consequence": "所有无时间戳支持的prespecified改为v2-locked、defined、study-defined或protocol-specified；只有存在早于分析的协议、commit或manifest时才能保留prespecified。"
+    },
+    {
+      "issue_id": "BIO05-P2-08",
+      "decision": "ACCEPT",
+      "rationale": "第一轮判断成立，属于claim boundary重写，不影响统计模型。正文主框架已转为immune-ecology，但图例仍出现immune-evasion，容易暗示机制性免疫逃逸。",
+      "evidence": "v1稿第372、376、380、384、388、392、396、400、404行图例重复写Immune-evasion programs；同稿第34、94、280、323行明确禁止机制、因果、临床和tumor-cell-intrinsic解释。",
+      "requires_reanalysis": false,
+      "protocol_consequence": "v2图例、标题、摘要和标签统一使用immune-ecology programs或immune-context programs，并保留非机制边界脚注。"
+    }
+  ],
+  "accepted_p0": 0,
+  "accepted_p1": 6,
+  "accepted_p2": 2,
+  "protocol": {
+    "research_question": "在10个CPTAC重叠癌种的肿瘤样本中，锁定的免疫生态基因程序是否在病例层级呈现癌种内RNA与蛋白/磷蛋白程序分数一致性；公共TCGA、APOLLO、单细胞和空间资源只能用于边界明确的敏感性或三角支持。",
+    "population": "主分析为CPTAC 10个癌种中tumor-like RNA且有匹配proteome或phosphoproteome的病例。支持层为TCGA primary tumor RNA一患者一样本、APOLLO LUAD/OV匹配病例、官方公共CELLxGENE/3CA donor-compartment pseudobulk、以及4个BRCA Visium样本。",
+    "eligibility": "CPTAC仅纳入RNA tumor-like aliquot，排除adjacent/normal和QC样本；按cancer、signature、comparison_layer、normalized_case_id匹配；每个病例每层每signature必须唯一；每个可分析stratum要求n>=20且两变量至少3个不同非缺失值；程序计分主规则要求每样本每层至少3个非缺失恢复基因。",
+    "time_origin": "横断面分子一致性研究，无随访时间起点。分析时间锚定为同一肿瘤病例的分子测量/样本层级索引；不得引入生存、治疗反应、预后、预测或因果时间顺序。",
+    "estimand": "主要estimand为每个cancer×program×layer的病例层级Spearman rho，暴露为RNA基因程序分数，结局为同病例protein或phosphoprotein基因折叠程序分数；二级estimand包括RNA调整残差与context变量相关、TCGA RNA-only程序结构、APOLLO同癌种支持、donor-paired source mapping和BRCA sample-level spatial contrasts。",
+    "exposure": "主分析暴露为同一病例的RNA signature score；单细胞支持层暴露/分组为compartment contrast；空间层为sample-level dominant compartment contrast。",
+    "outcome": "主分析结局为同一病例的protein或phosphoprotein signature score；残差层结局为RNA-adjusted protein/phosphoprotein residual；支持层结局为TCGA immune signature alignment、APOLLO omic score、donor pseudobulk score差异或BRCA Visium样本中位数差异。",
+    "inference_unit": "CPTAC、TCGA、APOLLO为患者/病例；单细胞为donor-compartment pseudobulk并在donor内配对；空间为Visium sample-level summary，不以cell或spot作为独立患者。",
+    "primary_model": "每个癌种、程序和层内计算Spearman rho、双侧P和95% CI；主程序分数采用基因等权：同一基因多个蛋白特征或磷酸化位点先在样本内折叠为一个基因层值，再对程序基因等权平均；feature-row等权只作敏感性。先运行输入存在性、hash/manifest、样本唯一性、gene recovery、缺失和distinct-value门禁。",
+    "covariates": [
+      "主CPTAC一致性模型不纳入临床协变量。",
+      "残差二级模型仅调整同一program的matched RNA score。",
+      "context变量限于tumor purity、ESTIMATE immune score、CIBERSORT T-cell signal、CIBERSORT myeloid signal，且不作为混杂控制或机制变量。"
+    ],
+    "missing_data": "不做插补。程序分数按非缺失恢复基因计算，低于预设恢复/非缺失阈值则该样本或stratum标记为not_evaluable并保留在registry。相关和残差模型使用stratum内pairwise complete cases；有限P值进入对应BH family，非可评估行保留分母和原因。",
+    "model_diagnostics": [
+      "source manifest完整性、大小和hash核验",
+      "normalized_case_id与sample-to-participant mapping审计",
+      "一病例一层一signature唯一性断言和重复优先级日志",
+      "每个program×layer的requested/recovered/nonmissing gene count",
+      "每个stratum的n、missingness、distinct value和tie程度",
+      "Spearman散点/秩相关影响点检查",
+      "残差线性模型R2、残差分布和非线性敏感性对照",
+      "癌种间异质性、leave-one-cancer-out和方向一致性检查"
+    ],
+    "multiplicity": "CPTAC primary family锁定为10×8×2注册行，非可评估行保留，有限P值进入BH。Residual-context family单独为可拟合stratum×4 context变量。TCGA RNA sensitivity、APOLLO cohort-layer、single-cell global/within-source families分别调整。BRCA spatial为sample-level描述，不升级患者级显著性。",
+    "meta_analysis": "不设单一正式pan-cancer主效应。主报告癌种内rho、median rho、positive cancer fraction和异质性描述。若保留meta式汇总，固定效应只能描述；推断性汇总必须另列REML随机效应、Hartung-Knapp区间和prediction interval，并不得替代癌种内主估计。",
+    "sensitivity_analyses": [
+      "feature-row等权计分与基因折叠等权主计分对照，尤其关注磷蛋白层方向和幅度变化",
+      "样本唯一性规则敏感性：重复存在时按预锁定优先级选择一个样本，并输出被排除样本表",
+      "最小恢复基因阈值>=3与更宽松阈值的稳健性比较，非可评估状态不得事后改变",
+      "rank residual或spline/GAM RNA调整敏感性，与线性残差方向对照",
+      "leave-one-cancer-out和within-cancer standardized pooled correlation仅作描述性稳健性",
+      "APOLLO按cohort-layer独立BH，negative rho不自动等于显著opposite，除非FDR支持时另行标识",
+      "single-cell主claim window为paired_donor_n>=6且global Wilcoxon FDR<0.05，另给paired_donor_n>=10敏感性",
+      "BRCA Visium只汇总sample-level median，不做spot-level推断"
+    ],
+    "claim_boundaries": [
+      "不得声称独立外部验证完整框架。",
+      "不得声称恶性细胞内在机制、细胞来源证明、后转录调控、kinase activation或因果机制。",
+      "不得声称预后、预测、诊断、治疗反应、临床实用性或选择性治疗脆弱性。",
+      "TCGA只能写RNA-only orthogonal sensitivity。",
+      "APOLLO只能写same-cancer public proteomic support by provenance，除非获得harmonized donor crosswalk。",
+      "BRCA spatial只能写same-collection sample-aware triangulation。",
+      "DepMap只能写supportive dependency context，不能写therapeutic vulnerability。",
+      "固定效应或随机效应汇总不得覆盖癌种内主估计和异质性。"
+    ],
+    "source_inputs": [
+      "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/03_downloads/cptac_python_processed",
+      "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/04_processed/discovery_v0_1/signature_gene_sets_v0_1.csv",
+      "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/04_processed/harmonization_v0_1/cptac_sample_map_v0_1.csv",
+      "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/04_processed/harmonization_v0_1/cptac_case_layer_coverage_v0_1.csv",
+      "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/04_processed/discovery_v0_4/cptac_bcm_transcriptomics_download_manifest_v0_4.csv",
+      "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/03_downloads/tcga_xena_pancanatlas",
+      "${SCI27_BIOBANK_ROOT}/topic_pool_cache/downloads/BIO-05/proteogenomics",
+      "${SCI27_BIOBANK_ROOT}/topic_pool_cache/manifests/BIO-05/bio05_public_validation_queue_20260730.tsv",
+      "${SCI27_BIOBANK_ROOT}/topic_pool_cache/downloads/BIO-05/3ca",
+      "${SCI27_BIOBANK_ROOT}/topic_pool_cache/manifests/BIO-05/bio05_brca_spatial_queue_20260730.tsv",
+      "${SCI27_DATA_ROOT}/10_neuro_omics_data_lake/03_downloads/pediatric_dmg_phgg_multiomics/external_support/depmap"
+    ],
+    "execution_steps": [
+      "在v2新目录复制或重建代码，不修改v1 final manuscript、协调目录或开放科学包历史资产。",
+      "写入时间戳化v2协议和source manifest，先于任何v2结果运行。",
+      "设置RESEARCH_WORKSPACE=${SCI27_RESEARCH_ROOT}与DATA_WORKSPACE=${SCI27_DATA_ROOT}，并记录Python依赖。",
+      "执行只读输入门禁：源文件存在、hash/size匹配、样本映射字段存在、gene set版本固定。",
+      "运行v2主CPTAC计分与匹配代码，包含基因折叠主计分和feature-row敏感性。",
+      "运行CPTAC癌种内相关、残差二级分析、multiplicity registry和诊断输出。",
+      "按证据层级运行TCGA、APOLLO、single-cell/3CA、BRCA spatial支持层，支持层不得升级主结论。",
+      "重新生成Methods、Results、Abstract数值句、全部主表/补表/图和图例。",
+      "进行独立设计/统计复核和代码-输出-稿件传播复核。"
+    ],
+    "outputs_to_regenerate": [
+      "v2 source manifest and checksum table",
+      "CPTAC gene recovery and score matrices",
+      "matched-case flow and duplicate audit",
+      "CPTAC within-cancer concordance full registry",
+      "CPTAC primary figures and Table 1/Table 2",
+      "residual model, residual-context table and diagnostics",
+      "descriptive/random-effects heterogeneity summaries if retained",
+      "TCGA RNA-only sensitivity outputs",
+      "APOLLO concordance, sample-flow and status outputs",
+      "single-cell/3CA source-mapping outputs",
+      "BRCA spatial sample-level outputs",
+      "all supplementary tables/data workbook",
+      "Methods, Results, Abstract, Discussion, figure legends and claim-boundary text"
+    ],
+    "stop_conditions": [
+      "任何主源文件、sample-to-participant mapping、gene set文件或必需样本ID字段缺失。",
+      "source manifest缺少主分析关键文件的size/hash或路径不可解析。",
+      "normalized_case_id后一病例一层一signature唯一性断言失败且预设优先级无法解决。",
+      "主stratum低于n>=20或distinct value门槛时不得估计，必须标记not_evaluable。",
+      "代码尝试写入v1 final manuscript、v1协调资产或历史开放科学包时停止。",
+      "v2实现仍使用many_to_many作为主匹配且无硬断言时停止。",
+      "以保留旧显著性、旧数字token或旧PASS为目标的任何协议调整均停止。",
+      "支持层缺少crosswalk却被写成independent validation时停止。",
+      "若APOLLO、3CA、CELLxGENE或Visium源文件不可验证，则对应支持层停止或降级，不模拟数据。"
+    ]
+  },
+  "allowed_change_map": {
+    "must_change": [
+      "主蛋白/磷蛋白计分estimand改为基因折叠等权主分析，feature-row等权降为敏感性，或若另行决定保留feature-level主分析则标题、estimand和结论必须全量改写。",
+      "CPTAC匹配从many_to_many容忍改为建模前唯一性断言和重复处理规则。",
+      "固定效应Fisher-z不得作为正式pan-cancer主效应；meta/汇总语言和方法必须降级或增加随机效应敏感性。",
+      "残差层必须写为二级描述，并加入非线性或rank残差敏感性。",
+      "公共支持层必须按TCGA RNA-only、APOLLO same-cancer support、single-cell source mapping、BRCA same-collection triangulation重写。",
+      "无时间戳证据的prespecified改为v2-locked或defined。",
+      "所有immune-evasion机制性图例措辞改为immune-ecology或immune-context。",
+      "Methods、Results、Abstract数值句、P/q、效应量、表图和结论随v2协议重新生成。"
+    ],
+    "may_change": [
+      "CPTAC matched n、score值、Spearman rho、CI、P值和q值",
+      "可评估/不可评估stratum数量及原因",
+      "残差显著结果数量和方向",
+      "meta/heterogeneity摘要、prediction interval和图形显示",
+      "TCGA、APOLLO、single-cell、3CA、BRCA spatial支持层的效应量、状态标签和表格顺序",
+      "主结论强度、标题措辞、摘要结果句和claim tier",
+      "补充表/图编号，只要有manifest和传播审计"
+    ],
+    "must_not_change_without_new_evidence": [
+      "八个免疫生态程序及其基因集来源不得事后按结果增删。",
+      "主数据源身份不得从CPTAC/BCM、TCGA、APOLLO、CELLxGENE/3CA、BRCA Visium、DepMap 26Q1擅自替换。",
+      "不得新增生存、治疗反应、预后、诊断、预测或因果终点。",
+      "没有harmonized donor crosswalk前，APOLLO不得改称donor-proven independent replication。",
+      "BRCA spatial与相关单细胞同集合身份不得改写为独立验证。",
+      "DepMap common/global dependency context不得改写为选择性治疗脆弱性。",
+      "作者、单位、伦理/豁免、基金、COI、AI声明、仓库URL、release、license、DOI不得推断。",
+      "v1旧PASS、数字不变、analysis_plan_changed=false不得作为保留旧结果或旧结论的证据。"
+    ]
+  },
+  "executable_assets": [
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/RUNBOOK.md",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_pan_cancer_proteomic_immune_evasion_discovery_v0_1.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_pan_cancer_proteomic_immune_evasion_v0_2_controls_rna_depmap.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_pan_cancer_proteomic_immune_evasion_v0_3_phosphosite_depmap_mechanism.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_pan_cancer_proteomic_immune_evasion_v0_4_matched_rna_source_decomposition.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_pan_cancer_proteomic_immune_evasion_v0_5_tcga_sensitivity.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_bio05_apollo_external_cohort_v0_7.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_bio05_scrna_source_mapping_v0_7.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_bio05_3ca_source_mapping_v0_8.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/run_bio05_brca_spatial_triangulation_v0_7.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/assemble_bio05_public_source_mapping_v0_8.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/code/project/scripts/build_bio05_round3_support_tables_v0_8.py",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/environment/.env.example",
+    "${SCI27_RESEARCH_ROOT}/outputs/manuscript17_open_science_packages_20260803/BIO-05_pan_cancer_proteogenomic_immune_evasion/repository/environment/generated/requirements-direct.lock",
+    "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/scripts/run_pan_cancer_proteomic_immune_evasion_v0_4_matched_rna_source_decomposition.py",
+    "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/scripts/run_bio05_apollo_external_cohort_v0_7.py",
+    "${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion/scripts/run_bio05_3ca_source_mapping_v0_8.py"
+  ],
+  "missing_evidence": [
+    "未找到早于v1分析运行的正式预注册/时间戳协议，不能支撑所有prespecified措辞。",
+    "开放科学包DATA_INVENTORY未把所有raw/public URL源文件的版本、文件大小、sha256和下载日期完整整合；本地manifest可部分补足但需v2冻结。",
+    "APOLLO与CPTAC缺harmonized donor-level crosswalk，只能证明公开ID无精确重叠，不能证明供者级独立。",
+    "现有v0_4主代码尚未实现基因折叠等权作为主计分；v2需要在新目录实现，不能修改v1。",
+    "未见v2 residual rank/nonlinear敏感性输出；当前只有线性RNA调整。",
+    "用户列出的10_neuro与11_public数据湖不是BIO-05主数据根；实际BIO-05数据根为${SCI27_DATA_ROOT}/14_pan_cancer_proteogenomic_immune_evasion。"
+  ],
+  "no_new_results_run": true,
+  "executive_summary": "本轮未发现缺失到无法定义BIO-05有效主分析的关键证据；CPTAC源矩阵、样本映射、处理清单、开放科学代码和实际数据根均可定位。因此不返回BLOCKED。第一轮6个P1和2个P2均有本地证据，但多数不是P0失效：真正需要v2重算的是计分estimand、匹配断言、汇总/meta边界和残差敏感性；公共支持层、prespecified和immune-evasion措辞主要是证据降级与重写。v2可进入结果无关重分析协议阶段，且本轮no_new_results_run=true。"
+}

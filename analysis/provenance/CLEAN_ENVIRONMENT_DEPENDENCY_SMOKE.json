@@ -1,0 +1,14 @@
+{
+  "project": "BIO-05",
+  "group": "pandas3",
+  "status": "PASS",
+  "group_install_status": "PASS",
+  "group_pip_check_status": "PASS",
+  "direct_dependencies": 7,
+  "dependency_import_status": "PASS",
+  "dependency_import_failures": "[]",
+  "path_resolver_status": "PASS",
+  "path_resolver_error": "",
+  "r_lock_status": "NOT_REQUIRED",
+  "boundary": "Dependency installation/import and path-resolution smoke only; no scientific model was rerun."
+}

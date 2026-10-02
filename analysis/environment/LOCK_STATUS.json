@@ -1,0 +1,12 @@
+{
+  "status": "CURRENT_HOST_LOCK_GENERATED_NOT_CLEAN_ENVIRONMENT_CERTIFIED",
+  "python_executable": "python3.14",
+  "python_version": "3.14.6",
+  "python_requested": 7,
+  "python_locked": 7,
+  "python_unresolved": [],
+  "rscript": "Rscript",
+  "r_requested": 0,
+  "r_locked": 0,
+  "r_unresolved": []
+}

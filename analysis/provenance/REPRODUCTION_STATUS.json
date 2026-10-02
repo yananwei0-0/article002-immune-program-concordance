@@ -1,0 +1,27 @@
+{
+  "version": "SCI27_REPOSITORY_REPRODUCTION_STATUS_V1",
+  "project": "BIO-05",
+  "generated_at_utc": "2026-08-18T08:19:38.078561+00:00",
+  "current_p2_numeric_gate_status": "PASS",
+  "clean_environment_dependency_smoke_status": "PASS",
+  "public_data_locator_count": 35,
+  "numeric_source_artifacts_assessed": 24,
+  "numeric_evidence_artifacts_copied": 20,
+  "numeric_evidence_artifacts_existing": 0,
+  "numeric_source_references_unresolved": 0,
+  "full_scientific_clean_rerun_status": "NOT_CERTIFIED_BY_THIS_STEP",
+  "public_release_status": "NOT_CREATED",
+  "historical_numerical_reproduction_tier": "DETERMINISTIC_RERUN_PARITY_PASS",
+  "historical_reproduction_evidence": {
+    "status": "PASS",
+    "tier": "DETERMINISTIC_RERUN_PARITY_PASS",
+    "source_relative_path": "local_audit/RERUN_CONSISTENCY.json",
+    "source_sha256": "3b69e39e7ba6b6e851ddb6e711a42755af194f9c31cbdc0717c6dcb63278ca6a",
+    "summary": {
+      "reported_status": null,
+      "files_or_outputs_compared": 7,
+      "pass_rule_satisfied": true
+    },
+    "boundary": "Historical evidence is summarized without local paths; it does not replace a future public clean-run log."
+  }
+}
