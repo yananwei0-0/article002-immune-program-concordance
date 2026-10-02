@@ -235,7 +235,7 @@ def main() -> None:
 
     VALIDATION_DIR.mkdir(parents=True, exist_ok=True)
     report = {
-        "release": "1.0.0-rc1",
+        "release": "1.0.0-rc2",
         "validated_on": date.today().isoformat(),
         "technical_validation": "PASS",
         "public_release_ready": public_release_ready,

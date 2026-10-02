@@ -1,6 +1,6 @@
 # Article 002 — publication-figure reproducibility release
 
-Release candidate: `v1.0.0-rc1` (2026-09-29)
+Release candidate: `v1.0.0-rc2` (2026-10-02)
 
 This repository candidate reproduces the four main figures, six supplementary figures, and 22 machine-readable analytical tables for:
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0-rc2 — 2026-10-02
+
+- Made the audited repository public and added the permanent repository URL to the manuscript.
+- Added the fixed GitHub Release identifier used for submission.
+- Retained named-author and Zenodo DOI completion for the final author-controlled release.
+
 ## 1.0.0-rc1 — 2026-09-29
 
 - Added the consolidated 22-table CSV export and manifest.
