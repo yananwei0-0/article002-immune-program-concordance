@@ -19,5 +19,6 @@ released when review-anonymity restrictions permit.
 Code, derived table exports, figure assets, and provenance documentation are
 available at
 <https://github.com/yananwei0-0/article002-immune-program-concordance>. The
-immutable archived release DOI will be inserted here after the final release is
-published.
+version used for submission is archived as GitHub Release `v1.0.0-rc2` at
+<https://github.com/yananwei0-0/article002-immune-program-concordance/releases/tag/v1.0.0-rc2>.
+The Zenodo DOI will be added after final named-author metadata is available.

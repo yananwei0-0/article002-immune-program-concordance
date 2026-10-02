@@ -5,7 +5,8 @@ message: >-
   available.
 title: "Article 002 publication-figure reproducibility package"
 type: software
-version: "1.0.0-rc1"
+version: "1.0.0-rc2"
+date-released: "2026-10-02"
 authors:
   - name: "Article 002 authors"
 repository-code: "https://github.com/yananwei0-0/article002-immune-program-concordance"
@@ -18,4 +19,3 @@ keywords:
 license:
   - MIT
   - CC-BY-4.0
-
