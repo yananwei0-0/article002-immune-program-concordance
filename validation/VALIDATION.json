@@ -1,8 +1,15 @@
 {
   "release": "1.0.0-rc1",
-  "validated_on": "2026-09-29",
+  "validated_on": "2026-10-02",
   "technical_validation": "PASS",
   "public_release_ready": false,
+  "resolved_release_metadata": [
+    "scoped dual license",
+    "source-terms and non-redistribution audit",
+    "repository URL",
+    "interim schema-valid CITATION.cff",
+    "full technical validation rerun"
+  ],
   "workbook_sheets": 23,
   "data_sheets": 22,
   "csv_exports": 22,
@@ -28,11 +35,8 @@
     "secret_hits": 0
   },
   "remaining_blockers": [
-    "author metadata",
-    "final license",
-    "source-terms confirmation",
-    "repository URL",
+    "review-anonymity decision and named author metadata",
     "archived release DOI",
-    "final CITATION.cff"
+    "full final validation review and public-release authorization"
   ]
 }
