@@ -8,6 +8,7 @@ import hashlib
 import json
 import re
 from collections import Counter
+from datetime import date
 from pathlib import Path
 
 from openpyxl import load_workbook
@@ -210,12 +211,31 @@ def main() -> None:
     require("| Layer | Program | Evaluable cancers |" in manuscript, "Main tables were not populated")
     require("tables/supplementary/S6a_TCGA_Full.csv" in manuscript, "Supplementary index is incomplete")
 
+    license_files = [ROOT / "LICENSE.md", ROOT / "LICENSE-CODE", ROOT / "LICENSE-CONTENT"]
+    require(all(path.is_file() for path in license_files), "Scoped repository license files are incomplete")
+    source_manifest = (ROOT / "provenance" / "SOURCE_MANIFEST_PUBLIC.csv").read_text(encoding="utf-8")
+    require("NOT_ASSESSED" not in source_manifest, "Unassessed source redistribution rows remain")
+    require(source_manifest.count("NOT_REDISTRIBUTED") == 105, "Source non-redistribution count mismatch")
+    citation_path = ROOT / "CITATION.cff"
+    require(citation_path.is_file(), "CITATION.cff is missing")
+    citation = citation_path.read_text(encoding="utf-8")
+    repository_url = "https://github.com/yananwei0-0/article002-immune-program-concordance"
+    require(repository_url in citation, "Final repository URL is missing from CITATION.cff")
+
+    remaining_blockers: list[str] = []
+    if "Article 002 authors" in citation:
+        remaining_blockers.append("review-anonymity decision and named author metadata")
+    if not re.search(r"(?m)^(?:doi:|\s+- type: doi\s*$)", citation):
+        remaining_blockers.append("archived release DOI")
+    remaining_blockers.append("full final validation review and public-release authorization")
+    public_release_ready = False
+
     VALIDATION_DIR.mkdir(parents=True, exist_ok=True)
     report = {
         "release": "1.0.0-rc1",
-        "validated_on": "2026-09-29",
+        "validated_on": date.today().isoformat(),
         "technical_validation": "PASS",
-        "public_release_ready": False,
+        "public_release_ready": public_release_ready,
         "workbook_sheets": len(workbook.sheetnames),
         "data_sheets": len(workbook.sheetnames) - 1,
         "csv_exports": csv_count,
@@ -233,22 +253,15 @@ def main() -> None:
             "spatial_registry": 24,
         },
         "portability_and_secret_scan": scan_counts,
-        "remaining_blockers": [
-            "author metadata",
-            "final license",
-            "source-terms confirmation",
-            "repository URL",
-            "archived release DOI",
-            "final CITATION.cff",
-        ],
+        "remaining_blockers": remaining_blockers,
     }
     (VALIDATION_DIR / "VALIDATION.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     audit = """# Article 002 release audit
 
-Technical validation: **PASS**  
-Public release ready: **NO — author-controlled metadata remains**
+Technical validation: **PASS**
+Public release ready: **NO — anonymity, named authors, and archived DOI remain**
 
-Validated on 2026-09-29 against the locked consolidated workbook.
+Validated against the locked consolidated workbook.
 
 - 23 workbook sheets: one contents sheet and 22 analytical sheets.
 - 22 CSV exports matched the workbook cell-for-cell and passed SHA-256 checks.
@@ -258,6 +271,7 @@ Validated on 2026-09-29 against the locked consolidated workbook.
 - The manuscript claim was corrected to 77/77 positive RNA–protein correlations and 76/77 with q < 0.05.
 - Unsupported acetylation and prespecification wording was removed.
 - No absolute local paths or credential-like strings were detected in public text assets.
+- The scoped dual license, repository URL, source-terms audit, and interim citation metadata were present.
 
 The remaining blockers are listed in `PUBLIC_RELEASE_BLOCKERS.md` and do not require scientific recomputation.
 """

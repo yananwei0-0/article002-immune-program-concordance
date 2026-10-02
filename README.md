@@ -6,7 +6,12 @@ This repository candidate reproduces the four main figures, six supplementary fi
 
 > RNA–protein and RNA–phosphoprotein concordance of tumor immune programs across ten CPTAC cancers
 
-The technical package is complete and validated. It is **not yet approved for public release** because author metadata, the final license, repository URL, and archived release DOI still require author input. See `PUBLIC_RELEASE_BLOCKERS.md`.
+The technical package is complete and validated. The scoped dual license,
+source-terms audit, repository URL, and an interim machine-readable citation
+file are now present. The repository remains **private and not yet approved for
+public release** while review-anonymity requirements, named author metadata,
+and the archived release DOI remain unresolved. See
+`PUBLIC_RELEASE_BLOCKERS.md`.
 
 ## Reproducibility boundary
 
@@ -73,7 +78,20 @@ The release validation checks the following locked quantities:
 
 ## Data and provenance
 
-Public source identities and file-level provenance are summarized in `DATA_ACCESS.md`, `DATA_SOURCES.md`, and `provenance/`. The source manifest retains `NOT_ASSESSED` redistribution flags where source-specific terms still require author review; the raw assets themselves are not included.
+Public source identities and file-level provenance are summarized in
+`DATA_ACCESS.md`, `DATA_SOURCES.md`, and `provenance/`. None of the 105 upstream
+assets in `provenance/SOURCE_MANIFEST_PUBLIC.csv` is present in the repository;
+all are marked `NOT_REDISTRIBUTED`. The source-family decisions and official
+terms routes are documented in `provenance/SOURCE_TERMS_AUDIT.md`.
+
+## License and citation
+
+Repository software is licensed under MIT. Original figure artwork, table
+presentation, and documentation are licensed under CC BY 4.0, subject to the
+exclusions in `LICENSE.md`. Upstream data are not relicensed. The current
+`CITATION.cff` uses a collective author label to preserve review anonymity and
+will be updated with named authors and the archived release DOI before public
+release.
 
 ## Release policy
 
