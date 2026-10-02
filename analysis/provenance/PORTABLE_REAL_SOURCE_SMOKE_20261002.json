@@ -1,0 +1,55 @@
+{
+  "executed_on": "2026-10-02",
+  "status": "PASS",
+  "scope": "Portable CLI/path smoke against retained official public-source files",
+  "cptac": {
+    "status": "PASS",
+    "elapsed_seconds": 53.388,
+    "registered_rows": 160,
+    "evaluable_rows": 129,
+    "fdr_supported_rows": 128,
+    "protocol_public_sha256": "f419f5ac589bf6d6ec61abb6663a47a5114b86a7d82980327b298adccb46aefc",
+    "locked_table_comparisons": "6/6 PASS"
+  },
+  "tcga": {
+    "status": "PASS",
+    "patients": 4780,
+    "correlation_rows": 5440,
+    "exact_historical_hash_matches": 7,
+    "locked_table_comparisons": "4/4 PASS",
+    "files_checked": {
+      "tcga_xena_68immune_meta_summary_v0_5.csv": "748f0a67f2b35eaa3902a2f4c5720aaea62f239165d175c3ed81c0f78ff5ad4c",
+      "tcga_xena_68immune_within_cancer_correlations_v0_5.csv": "cb9bfc2099c5d937b87434a4307a332d1409a81ae6d014941e8a9d4553110aac",
+      "tcga_xena_immune_subtype_summary_v0_5.csv": "bcb08ffa28093e16b4dd3cdcac40ceef1e5a7bf0d42f94440029517a363f9ddb",
+      "tcga_xena_immune_subtype_tests_v0_5.csv": "4078a7012ff4322c6deb55a900db2d62fa8ff7d6ece9201d2b107c856eeb2c3f",
+      "tcga_xena_signature_recovery_v0_5.csv": "2c0ded5c1318b32f3e3a7c3b9d8af54c99d9b583a4a8ca304e02620b679b32e5",
+      "tcga_xena_signature_scores_v0_5.csv": "6b8efa1313e9eaf7709efb65a8bd4deed48ceafefab6ca4caaf6afc16e432379",
+      "tcga_xena_signature_summary_v0_5.csv": "9c806e5a584bfa2a3aac6ab888edc8ff3634d179fbacbb415e89e662a4702f5c"
+    }
+  },
+  "apollo": {
+    "status": "PASS",
+    "concordance_rows": 17,
+    "core_concordance_columns_exact": true,
+    "core_columns": [
+      "cohort_label",
+      "cancer_code",
+      "comparison_layer",
+      "signature",
+      "signature_label",
+      "n",
+      "spearman_rho",
+      "ci_lower",
+      "ci_upper"
+    ],
+    "exact_historical_hash_matches": {
+      "apollo_concordance_v0_7.csv": "656c2d4cdf9eb683eb5faf84d4d4dffc3272506a9194f88bb30c473aab85e617",
+      "apollo_consistency_vs_discovery_v0_7.csv": "184184f061078ab798c39ece73c29c53551049d7c5e221ada56e420eec2bc2e1",
+      "apollo_signature_recovery_v0_7.csv": "0ae4b9c89d8984a4b261bd6121ee061b4a713686bebdf90d2842c5d086f55522",
+      "apollo_signature_scores_v0_7.csv": "0ca79e05dac216d13aa2cf9e7a66d6810c1df17c85a3ccd42e11c177f5648adf"
+    },
+    "discovery_binding": "The APOLLO stage was bound to the freshly recomputed CPTAC primary registry; all four raw APOLLO CSV hashes matched the retained historical outputs."
+  },
+  "fresh_locked_table_comparisons": "10/10 available CPTAC and TCGA registries PASS",
+  "boundary": "The large H5AD and 3CA layers were not repeated for this release; their retained historical real-source outputs remain covered by the 14/14 locked-table parity evidence."
+}

@@ -1,0 +1,78 @@
+{
+  "project": "BIO-05",
+  "status": "PASS",
+  "method": "two consecutive executions of the deterministic CURRENT_P2 generator under the same retained inputs",
+  "tracked_file_count": 17,
+  "tracked_files": [
+    "current_p2_closure/build_current_p2_outputs.py",
+    "current_p2_closure/run_current_p2_gate.py",
+    "manuscript/BIO-05_METHODS_RESULTS_CURRENT_P2.md",
+    "current_p2_closure/NUMERIC_MAP_CURRENT_P2.csv",
+    "current_p2_closure/PROGRAM_DEFINITION_CURRENT_P2.csv",
+    "current_p2_closure/SOFTWARE_ENVIRONMENT_CURRENT_P2.json",
+    "current_p2_closure/SUPPORT_MAPPING_RULES_CURRENT_P2.json",
+    "current_p2_closure/TCGA_PRIMARY_SAMPLE_SELECTION_CURRENT_P2.csv",
+    "current_p2_closure/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv",
+    "current_p2_closure/NUMERIC_DERIVATIONS_CURRENT_P2.json",
+    "current_p2_closure/CURRENT_P2_ADJUDICATION.json",
+    "current_p2_closure/CURRENT_P2_ADJUDICATION.md",
+    "current_p2_closure/COMMANDS_RUN.txt",
+    "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_discovery_v0_1.py",
+    "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_2_controls_rna_depmap.py",
+    "cross_freeze_revision/CROSS_FREEZE_REVISION_1.json",
+    "cross_freeze_revision/CROSS_FREEZE_REVISION_1.md"
+  ],
+  "pass_1_hashes": {
+    "current_p2_closure/build_current_p2_outputs.py": "73c303fa97396c58676487dd6e8be399c2d9094ee677a85699f1ea723fcc4d86",
+    "current_p2_closure/run_current_p2_gate.py": "942765ce2c1f763949524c24aa7fb020701bb791a9764e57d57eeb0dd5ada8af",
+    "manuscript/BIO-05_METHODS_RESULTS_CURRENT_P2.md": "bb0049fe2c1e1f1918aa52435d3d3772718112e6a03ea314db605e55fe1569cd",
+    "current_p2_closure/NUMERIC_MAP_CURRENT_P2.csv": "bc6bf73c1a8a7a2f2552ecbb4cf8cf4fd0ec99c0f1ac4ff6d9bcc880b68c9fc0",
+    "current_p2_closure/PROGRAM_DEFINITION_CURRENT_P2.csv": "b631094186b4f1a69f3e2ee8b948009f10f4b7ad0b644cd1cf446e4152c46ef1",
+    "current_p2_closure/SOFTWARE_ENVIRONMENT_CURRENT_P2.json": "a215094fdbcd01f15a9306eabcc11da4bf3fba8e00fa3ae4c5f9d6a7d4addd83",
+    "current_p2_closure/SUPPORT_MAPPING_RULES_CURRENT_P2.json": "3bfa2f111e448500f090fdf8177b2f629b5d2556820554446b7c61ddc4ea1898",
+    "current_p2_closure/TCGA_PRIMARY_SAMPLE_SELECTION_CURRENT_P2.csv": "ae58a204224e9525a58fc5a670898701aefb3ead69e9cd9aa079b235de77882b",
+    "current_p2_closure/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv": "bf22747d0649848267c823096622a0459a15b185d37e5287d0a1373750e630bd",
+    "current_p2_closure/NUMERIC_DERIVATIONS_CURRENT_P2.json": "e696be06cfa93e2e6f0cb5e39ce8b1d8094a2f4d98362c502c3f56b102b62e8f",
+    "current_p2_closure/CURRENT_P2_ADJUDICATION.json": "2043272b8ca61d83edfe9dc63fc4ff5ad5622f25531cc74a96898e62727c4ab9",
+    "current_p2_closure/CURRENT_P2_ADJUDICATION.md": "a7b4e7fbb8d8b4a7ded7ce35dc91966211528a62067e36eed227800b1d4403fc",
+    "current_p2_closure/COMMANDS_RUN.txt": "d4f29c9f2640f70a671461646c397807550435dc9469794b9d36e6026246f08a",
+    "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_discovery_v0_1.py": "79d050d282f361af325b03c248ed8c9044fda6f9dbea439a24c02c0a20944abf",
+    "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_2_controls_rna_depmap.py": "adeee39f677fe0e065d8be399f1b9e9702ce4cbbe7ab7ff0c60c13f53c7b3862",
+    "cross_freeze_revision/CROSS_FREEZE_REVISION_1.json": "89c24d89ba40ba5bd23c213a4f5bc375afacb50f950efaa58b8d043def0c3763",
+    "cross_freeze_revision/CROSS_FREEZE_REVISION_1.md": "2ebe7acf89ea78a3a5bd42c8df8a08a5120623d0099ee992083e90560b848196"
+  },
+  "pass_2_hashes": {
+    "current_p2_closure/build_current_p2_outputs.py": "73c303fa97396c58676487dd6e8be399c2d9094ee677a85699f1ea723fcc4d86",
+    "current_p2_closure/run_current_p2_gate.py": "942765ce2c1f763949524c24aa7fb020701bb791a9764e57d57eeb0dd5ada8af",
+    "manuscript/BIO-05_METHODS_RESULTS_CURRENT_P2.md": "bb0049fe2c1e1f1918aa52435d3d3772718112e6a03ea314db605e55fe1569cd",
+    "current_p2_closure/NUMERIC_MAP_CURRENT_P2.csv": "bc6bf73c1a8a7a2f2552ecbb4cf8cf4fd0ec99c0f1ac4ff6d9bcc880b68c9fc0",
+    "current_p2_closure/PROGRAM_DEFINITION_CURRENT_P2.csv": "b631094186b4f1a69f3e2ee8b948009f10f4b7ad0b644cd1cf446e4152c46ef1",
+    "current_p2_closure/SOFTWARE_ENVIRONMENT_CURRENT_P2.json": "a215094fdbcd01f15a9306eabcc11da4bf3fba8e00fa3ae4c5f9d6a7d4addd83",
+    "current_p2_closure/SUPPORT_MAPPING_RULES_CURRENT_P2.json": "3bfa2f111e448500f090fdf8177b2f629b5d2556820554446b7c61ddc4ea1898",
+    "current_p2_closure/TCGA_PRIMARY_SAMPLE_SELECTION_CURRENT_P2.csv": "ae58a204224e9525a58fc5a670898701aefb3ead69e9cd9aa079b235de77882b",
+    "current_p2_closure/TCGA_ANCHOR_SELECTION_CURRENT_P2.csv": "bf22747d0649848267c823096622a0459a15b185d37e5287d0a1373750e630bd",
+    "current_p2_closure/NUMERIC_DERIVATIONS_CURRENT_P2.json": "e696be06cfa93e2e6f0cb5e39ce8b1d8094a2f4d98362c502c3f56b102b62e8f",
+    "current_p2_closure/CURRENT_P2_ADJUDICATION.json": "2043272b8ca61d83edfe9dc63fc4ff5ad5622f25531cc74a96898e62727c4ab9",
+    "current_p2_closure/CURRENT_P2_ADJUDICATION.md": "a7b4e7fbb8d8b4a7ded7ce35dc91966211528a62067e36eed227800b1d4403fc",
+    "current_p2_closure/COMMANDS_RUN.txt": "d4f29c9f2640f70a671461646c397807550435dc9469794b9d36e6026246f08a",
+    "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_discovery_v0_1.py": "79d050d282f361af325b03c248ed8c9044fda6f9dbea439a24c02c0a20944abf",
+    "current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_2_controls_rna_depmap.py": "adeee39f677fe0e065d8be399f1b9e9702ce4cbbe7ab7ff0c60c13f53c7b3862",
+    "cross_freeze_revision/CROSS_FREEZE_REVISION_1.json": "89c24d89ba40ba5bd23c213a4f5bc375afacb50f950efaa58b8d043def0c3763",
+    "cross_freeze_revision/CROSS_FREEZE_REVISION_1.md": "2ebe7acf89ea78a3a5bd42c8df8a08a5120623d0099ee992083e90560b848196"
+  },
+  "hash_mismatches": [],
+  "builder_runs": [
+    {
+      "pass": 1,
+      "builder_exit_code": 0,
+      "stdout": "{\n  \"project\": \"BIO-05\",\n  \"status\": \"BUILT_PENDING_GATE\",\n  \"p2_sha256\": \"bb0049fe2c1e1f1918aa52435d3d3772718112e6a03ea314db605e55fe1569cd\",\n  \"numeric_occurrences\": 276\n}",
+      "stderr": ""
+    },
+    {
+      "pass": 2,
+      "builder_exit_code": 0,
+      "stdout": "{\n  \"project\": \"BIO-05\",\n  \"status\": \"BUILT_PENDING_GATE\",\n  \"p2_sha256\": \"bb0049fe2c1e1f1918aa52435d3d3772718112e6a03ea314db605e55fe1569cd\",\n  \"numeric_occurrences\": 276\n}",
+      "stderr": ""
+    }
+  ]
+}

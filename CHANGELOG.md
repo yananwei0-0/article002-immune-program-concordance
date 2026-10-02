@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0-rc3 — 2026-10-02
+
+- Added the principal CPTAC, TCGA, APOLLO, single-cell/3CA, and spatial scientific-analysis code.
+- Added a unified public-input stage runner and documented input layout.
+- Added a 14-registry numerical parity gate; the retained historical real-source outputs pass 14/14 comparisons with the locked publication tables.
+- Parameterized machine-local paths and added analysis-layer portability/secret validation.
+- Updated the manuscript availability statement to describe the expanded reproducibility boundary accurately.
+
 ## 1.0.0-rc2 — 2026-10-02
 
 - Made the audited repository public and added the permanent repository URL to the manuscript.

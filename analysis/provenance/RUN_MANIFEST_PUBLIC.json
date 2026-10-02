@@ -1,0 +1,696 @@
+{
+  "project": "BIO-05",
+  "status": "V2_ANALYSIS_COMPLETE",
+  "created_at_utc": "2026-08-11T16:07:39Z",
+  "completed_at_utc": "2026-08-12T02:25:26+00:00",
+  "protocol_path": "<LOCAL_PATH:BIO-05_V2_LOCKED_PROTOCOL.json>",
+  "protocol_sha256_expected": "a3bc200faf24eefb1b89be08cb4b6804b81423f50c3337a430434e6015143fc3",
+  "protocol_sha256_observed": "a3bc200faf24eefb1b89be08cb4b6804b81423f50c3337a430434e6015143fc3",
+  "protocol_sha256_match": true,
+  "analysis_plan_deviation": false,
+  "historical_assets_read_only": true,
+  "runtime": {
+    "python_executable": "<LOCAL_PATH:python3>",
+    "python_version": "3.14.6",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O"
+  },
+  "source_execution": {
+    "cptac": "real_source_exit_0",
+    "tcga": "real_source_exit_0_via_path_safe_wrapper",
+    "apollo": "real_source_exit_0",
+    "single_cell": "real_source_exit_0",
+    "threeca": "real_source_exit_0",
+    "spatial": "real_source_exit_0"
+  },
+  "commands_log": "logs/COMMANDS_V2.log",
+  "output_manifest": [
+    {
+      "relative_path": "code/build_final_assets_v2.py",
+      "size_bytes": 38985,
+      "sha256": "13f8157161595561fcd1ffdff49d0c8504c485aa7c3f173a39d30e1bd6532955"
+    },
+    {
+      "relative_path": "code/check_rerun_consistency_v2.py",
+      "size_bytes": 3208,
+      "sha256": "e340d3d79d01e2c1e6b1aa6e46bf7affc43cec39b440b840109b8e202d53e8f5"
+    },
+    {
+      "relative_path": "code/finalize_statistics_audit_cycle_v2.py",
+      "size_bytes": 16017,
+      "sha256": "cf7f2ee483d20892c3f8fd3910255680e21e0def32d1f689f797b93613680e69"
+    },
+    {
+      "relative_path": "code/postprocess_support_v2.py",
+      "size_bytes": 20109,
+      "sha256": "929eb04be83eae14bc63a7bc9ccdf5bb17a8e9193862bdc3066c83b38ebdc34b"
+    },
+    {
+      "relative_path": "code/run_cptac_v2.py",
+      "size_bytes": 50149,
+      "sha256": "93307da4da6e1fff3b15898de75b9e21e783433fa73b9d4c102095046c84e002"
+    },
+    {
+      "relative_path": "code/run_h5ad_support_v2.py",
+      "size_bytes": 36130,
+      "sha256": "2836e64a2c4b629e9fe62475646fc5f3613ea64fb96bf4ee01f5da5c72b7132f"
+    },
+    {
+      "relative_path": "code/run_independent_audit_v2.py",
+      "size_bytes": 16015,
+      "sha256": "2de1cdb3ba0195a9910f76231b6231c40ace84fbddee1bf143c6db96e8c75b87"
+    },
+    {
+      "relative_path": "code/run_tcga_source_wrapper_v2.py",
+      "size_bytes": 1285,
+      "sha256": "6817985dcd8634506d67832e71ebe4691947857b5abfe4743db02f7dd97e0568"
+    },
+    {
+      "relative_path": "results/apollo/apollo_concordance_registry_v2.csv",
+      "size_bytes": 7328,
+      "sha256": "8b973fdd2d831f1f4d8c06d1855def025786e2d42630ddea4d16562ef5823ec9"
+    },
+    {
+      "relative_path": "results/apollo/apollo_concordance_v0_7.csv",
+      "size_bytes": 2908,
+      "sha256": "656c2d4cdf9eb683eb5faf84d4d4dffc3272506a9194f88bb30c473aab85e617"
+    },
+    {
+      "relative_path": "results/apollo/apollo_consistency_vs_discovery_v0_7.csv",
+      "size_bytes": 393,
+      "sha256": "184184f061078ab798c39ece73c29c53551049d7c5e221ada56e420eec2bc2e1"
+    },
+    {
+      "relative_path": "results/apollo/apollo_signature_recovery_v0_7.csv",
+      "size_bytes": 2767,
+      "sha256": "0ae4b9c89d8984a4b261bd6121ee061b4a713686bebdf90d2842c5d086f55522"
+    },
+    {
+      "relative_path": "results/apollo/apollo_signature_scores_v0_7.csv",
+      "size_bytes": 234097,
+      "sha256": "0ca79e05dac216d13aa2cf9e7a66d6810c1df17c85a3ccd42e11c177f5648adf"
+    },
+    {
+      "relative_path": "results/cptac/cptac_complete_denominator_flow_v2.csv",
+      "size_bytes": 13038,
+      "sha256": "e038d17536fd8a38fda8469738f51d15545a2140c3c1bed783648522dbf50dfa"
+    },
+    {
+      "relative_path": "results/cptac/cptac_context_features_recomputed_v2.csv",
+      "size_bytes": 95867,
+      "sha256": "db540e0c511705d3cbaf80842c61bd1355ddb93fe2d4e9564a64dec27810b108"
+    },
+    {
+      "relative_path": "results/cptac/cptac_context_input_files_v2.csv",
+      "size_bytes": 5076,
+      "sha256": "35b8204bd9484b8d82d000928f4dfef3205b3086ec682fac7151d9590afc5a75"
+    },
+    {
+      "relative_path": "results/cptac/cptac_duplicate_priority_audit_v2.csv",
+      "size_bytes": 308536,
+      "sha256": "833ce30a847467deecb98a505a20fadc1353b30a7c4ef155abf6106509480ff2"
+    },
+    {
+      "relative_path": "results/cptac/cptac_feature_row_sensitivity_registry_v2.csv",
+      "size_bytes": 65210,
+      "sha256": "0dfd5152c7d835d9ac494fbe38ae9440dc2ad0bf06a6f01cb5777195244b00a8"
+    },
+    {
+      "relative_path": "results/cptac/cptac_gene_recovery_v2.csv",
+      "size_bytes": 86310,
+      "sha256": "67815631b3daff92d1c1f33eaf5b0a1e099b33e3deaf30e396c2072daba1d7a8"
+    },
+    {
+      "relative_path": "results/cptac/cptac_heterogeneity_summary_v2.csv",
+      "size_bytes": 4609,
+      "sha256": "c566c6d3ee19bfa2f928c4bbee8cd1475eef4943489e84c1c4e0b944b50fcbbd"
+    },
+    {
+      "relative_path": "results/cptac/cptac_input_files_v2.csv",
+      "size_bytes": 8993,
+      "sha256": "04f6dbfac0d5e87a7bec44987e7db4e6aeac59ab48d6efffa2b8d0b19cde172f"
+    },
+    {
+      "relative_path": "results/cptac/cptac_internal_validation_v2.json",
+      "size_bytes": 612,
+      "sha256": "11684fafe02b8eb3bf76f52571d1350768f6477c23988c74c63766fa50b32164"
+    },
+    {
+      "relative_path": "results/cptac/cptac_leave_one_cancer_out_v2.csv",
+      "size_bytes": 10379,
+      "sha256": "5a7674d239f68a94368498c5446a0303ac8d32f65bb7040cb726f47fc5edda67"
+    },
+    {
+      "relative_path": "results/cptac/cptac_matched_gene_equal_scores_v2.csv",
+      "size_bytes": 2024565,
+      "sha256": "f4ea781d54260687dab89ce93216f2daa0458978c13834dba937cb611a1a4c0b"
+    },
+    {
+      "relative_path": "results/cptac/cptac_primary_concordance_registry_v2.csv",
+      "size_bytes": 67935,
+      "sha256": "7a2dd33847989970c26e676a2f217b432e004b37763ae7b4c85dfa88a2b09641"
+    },
+    {
+      "relative_path": "results/cptac/cptac_program_scores_v2.csv",
+      "size_bytes": 3465180,
+      "sha256": "8cf514f83a093fb45b9142a65cce02261c34a8897e24a46c0deafc9615c03563"
+    },
+    {
+      "relative_path": "results/cptac/cptac_residual_context_registry_v2.csv",
+      "size_bytes": 135235,
+      "sha256": "956034f6174a416d3fed4e4954e44d854f40f18ee5ab126855d5dd13147848f5"
+    },
+    {
+      "relative_path": "results/cptac/cptac_residual_model_diagnostics_v2.csv",
+      "size_bytes": 41196,
+      "sha256": "b15d7395313d29fa836dd82a3aa4272dc31f93c1ee849d3a1ccaad0b8ba8147b"
+    },
+    {
+      "relative_path": "results/cptac/cptac_residual_scores_v2.csv",
+      "size_bytes": 1737021,
+      "sha256": "ae5e658551bef39b4741528ee81e22fb0493efcf8db89540ba276e1021cd488a"
+    },
+    {
+      "relative_path": "results/cptac/cptac_results_summary_v2.json",
+      "size_bytes": 1534,
+      "sha256": "3288771a26e9039f85608713dcdcc65eb4d008cd2b233858305bbbb4fd639fea"
+    },
+    {
+      "relative_path": "results/cptac/cptac_sample_mapping_crosscheck_v2.csv",
+      "size_bytes": 849,
+      "sha256": "6e069166db45652fcee781d40c51872de90a6b2e7c2b7190538be37f4d67d874"
+    },
+    {
+      "relative_path": "results/cptac/cptac_selected_sample_map_v2.csv",
+      "size_bytes": 125912,
+      "sha256": "6b9c58e7bc566e12cdbe6f6b4e6d9e8535208fbd66e82ed3d84a6e2c44576b02"
+    },
+    {
+      "relative_path": "results/cptac/cptac_threshold1_sensitivity_registry_v2.csv",
+      "size_bytes": 71146,
+      "sha256": "4697cb4a4270af460f48b8e23acbe25befba3bb003aa2aae3e17a9ace2ff9101"
+    },
+    {
+      "relative_path": "results/cptac/cptac_within_cancer_standardized_pooled_sensitivity_v2.csv",
+      "size_bytes": 3061,
+      "sha256": "7d5d81e6f8bb5dcf7591f83d59713e99a9ee80aa0ece17034c03dbb6ddd3cf13"
+    },
+    {
+      "relative_path": "results/scrna/scrna_dataset_cancer_signature_summary_v0_7.csv",
+      "size_bytes": 19015,
+      "sha256": "5620b52783b4e49378ec4098578dcea9822e648be73cf0bd40e1092c7aa764a2"
+    },
+    {
+      "relative_path": "results/scrna/scrna_group_counts_v0_7.csv",
+      "size_bytes": 96093,
+      "sha256": "fd7368f94dd88cc16030956b67c1027c84461c1479c9147a51945f477d7350d2"
+    },
+    {
+      "relative_path": "results/scrna/scrna_pairwise_contrasts_v0_7.csv",
+      "size_bytes": 59028,
+      "sha256": "a87497289f73e9f1c3f3c2d4a593d269f38851f3e860581c386ec208ccb1e71d"
+    },
+    {
+      "relative_path": "results/scrna/scrna_queue_audit_v0_7.csv",
+      "size_bytes": 2952,
+      "sha256": "a919c49bee38921d0dd90634e2673d6df32040c0b97be7bf207fa2bef6d1c571"
+    },
+    {
+      "relative_path": "results/scrna/scrna_schema_audit_v0_7.csv",
+      "size_bytes": 8348,
+      "sha256": "783f29fc68d1b1605878c61df0fd5950ef76ed7fa172249249a14684f216b3c8"
+    },
+    {
+      "relative_path": "results/scrna/scrna_signature_scores_v0_7.csv",
+      "size_bytes": 1052663,
+      "sha256": "4125c22db8bb2eb0c486ce05bbb9778f889ac8efc3d41fd2f2e459dc2c8fe729"
+    },
+    {
+      "relative_path": "results/scrna_combined/public_scrna_and_3ca_donor_compartment_scores_v2.csv",
+      "size_bytes": 2402021,
+      "sha256": "938b062702700e4e2b2d4bf5bfec39c3ad39cd089905301e189fa49b3e57835a"
+    },
+    {
+      "relative_path": "results/scrna_combined/public_scrna_global_wilcoxon_registry_v2.csv",
+      "size_bytes": 8845,
+      "sha256": "4ba04094edd488a2f782ad7a7a59dea57ba240544c844d07748cd8057cb1d0b2"
+    },
+    {
+      "relative_path": "results/scrna_combined/public_scrna_source_donor_provenance_audit_v2.csv",
+      "size_bytes": 5213,
+      "sha256": "66bc40c5d6389cb417cc6bbc651b9e6163b99622a94215cd38015ced1045b970"
+    },
+    {
+      "relative_path": "results/scrna_combined/public_scrna_within_source_wilcoxon_registry_v2.csv",
+      "size_bytes": 117911,
+      "sha256": "f97bc48ed487267201a695674f7e3ec54fe887177e7c907bef05448f04d2ea77"
+    },
+    {
+      "relative_path": "results/spatial/spatial_brca_pairwise_contrasts_v0_7.csv",
+      "size_bytes": 1950,
+      "sha256": "430e02e777824a141ae093355f9124798166f4215d0643b135de9eea3410322c"
+    },
+    {
+      "relative_path": "results/spatial/spatial_brca_sample_signature_summary_v0_7.csv",
+      "size_bytes": 5189,
+      "sha256": "62240e9845f275392bc5c87d63d686e276212a42721cdd664a81ad66fd503310"
+    },
+    {
+      "relative_path": "results/spatial/spatial_brca_signature_scores_v0_7.csv",
+      "size_bytes": 10378902,
+      "sha256": "a0cfe697a58eb09d300cb600a45e356d3b838cd5b87c6e86f0ffcdae4763d611"
+    },
+    {
+      "relative_path": "results/spatial/spatial_brca_spot_compartment_counts_v0_7.csv",
+      "size_bytes": 1083,
+      "sha256": "def4ad82e2b29f1ce4d745e13a2f4b8b18cdac932381887cf6f031b4cff68fb0"
+    },
+    {
+      "relative_path": "results/support_layers_summary_v2.json",
+      "size_bytes": 1608,
+      "sha256": "3762bec831a769ef445aa3f2eb9662f16148f7f6bbc95f39c400d41529076963"
+    },
+    {
+      "relative_path": "results/tcga/tcga_source_execution_summary.json",
+      "size_bytes": 2504,
+      "sha256": "dfac3233d14bae6fce84f486bec740909657f6a45b3a75fbddcdc905b96e6123"
+    },
+    {
+      "relative_path": "results/tcga/tcga_xena_68immune_meta_summary_v0_5.csv",
+      "size_bytes": 59133,
+      "sha256": "748f0a67f2b35eaa3902a2f4c5720aaea62f239165d175c3ed81c0f78ff5ad4c"
+    },
+    {
+      "relative_path": "results/tcga/tcga_xena_68immune_within_cancer_correlations_v0_5.csv",
+      "size_bytes": 1526847,
+      "sha256": "cb9bfc2099c5d937b87434a4307a332d1409a81ae6d014941e8a9d4553110aac"
+    },
+    {
+      "relative_path": "results/tcga/tcga_xena_immune_subtype_summary_v0_5.csv",
+      "size_bytes": 5954,
+      "sha256": "bcb08ffa28093e16b4dd3cdcac40ceef1e5a7bf0d42f94440029517a363f9ddb"
+    },
+    {
+      "relative_path": "results/tcga/tcga_xena_immune_subtype_tests_v0_5.csv",
+      "size_bytes": 1792,
+      "sha256": "4078a7012ff4322c6deb55a900db2d62fa8ff7d6ece9201d2b107c856eeb2c3f"
+    },
+    {
+      "relative_path": "results/tcga/tcga_xena_signature_recovery_v0_5.csv",
+      "size_bytes": 1990,
+      "sha256": "2c0ded5c1318b32f3e3a7c3b9d8af54c99d9b583a4a8ca304e02620b679b32e5"
+    },
+    {
+      "relative_path": "results/tcga/tcga_xena_signature_scores_v0_5.csv",
+      "size_bytes": 6143089,
+      "sha256": "6b8efa1313e9eaf7709efb65a8bd4deed48ceafefab6ca4caaf6afc16e432379"
+    },
+    {
+      "relative_path": "results/tcga/tcga_xena_signature_summary_v0_5.csv",
+      "size_bytes": 2777,
+      "sha256": "9c806e5a584bfa2a3aac6ab888edc8ff3634d179fbacbb415e89e662a4702f5c"
+    },
+    {
+      "relative_path": "results/tcga_input/discovery_claim_tier_table_v0_4.csv",
+      "size_bytes": 347,
+      "sha256": "86dd3d78a3d634f4acabdd960d45cab12cac8cfedccdb9790b106cf7ec35407a"
+    },
+    {
+      "relative_path": "results/threeca/threeca_dataset_cancer_signature_summary_v0_8.csv",
+      "size_bytes": 3116,
+      "sha256": "11ab4a3934799d03eafb38ba58ed3d86c6d6fcf0d26c621e67db7b39c7941bb6"
+    },
+    {
+      "relative_path": "results/threeca/threeca_group_counts_v0_8.csv",
+      "size_bytes": 7911,
+      "sha256": "36618ad6b23c0d39b8ae36646116e14cbb695e67a6dca72cf74ed62efe6c24bf"
+    },
+    {
+      "relative_path": "results/threeca/threeca_pairwise_contrasts_v0_8.csv",
+      "size_bytes": 7920,
+      "sha256": "cece47ca67f7dbe7bbc2669c5926885d11a9c758003781161440ef5357d08c03"
+    },
+    {
+      "relative_path": "results/threeca/threeca_schema_audit_v0_8.csv",
+      "size_bytes": 1482,
+      "sha256": "7fddce13632361d2740fb44a067e9c8109a38bc1c59c5bca7667fc799297bb3e"
+    },
+    {
+      "relative_path": "results/threeca/threeca_signature_scores_v0_8.csv",
+      "size_bytes": 86690,
+      "sha256": "e43ae8c15af325eb0903f3642a53baa361d76bd9ab6f3afd6d774231c44b7011"
+    },
+    {
+      "relative_path": "tables/BIO-05_SUPPLEMENTARY_DATA_V2.xlsx",
+      "size_bytes": 358154,
+      "sha256": "dfef0daa021226f8c4aee9492b5556faea3157c6f786deef41afd31ed3dbacde"
+    },
+    {
+      "relative_path": "tables/SUPPLEMENT_TABLE_S1_PRIMARY_REGISTRY_V2.csv",
+      "size_bytes": 67935,
+      "sha256": "7a2dd33847989970c26e676a2f217b432e004b37763ae7b4c85dfa88a2b09641"
+    },
+    {
+      "relative_path": "tables/SUPPLEMENT_TABLE_S2_SCORING_SENSITIVITY_V2.csv",
+      "size_bytes": 65210,
+      "sha256": "0dfd5152c7d835d9ac494fbe38ae9440dc2ad0bf06a6f01cb5777195244b00a8"
+    },
+    {
+      "relative_path": "tables/SUPPLEMENT_TABLE_S3_RESIDUAL_CONTEXT_V2.csv",
+      "size_bytes": 135235,
+      "sha256": "956034f6174a416d3fed4e4954e44d854f40f18ee5ab126855d5dd13147848f5"
+    },
+    {
+      "relative_path": "tables/TABLE1_CPTAC_CASE_FLOW_V2.csv",
+      "size_bytes": 714,
+      "sha256": "d018d4c550859ec3158e757ffa854bfee31f54e11c8c0c6db9335d1dc7eee97c"
+    },
+    {
+      "relative_path": "tables/TABLE1_CPTAC_CASE_FLOW_V2.md",
+      "size_bytes": 3300,
+      "sha256": "7429ee1f3ec190e31395cf2a346f6d226d9ae351df00c2e57f37acc01ceb4d2e"
+    },
+    {
+      "relative_path": "tables/TABLE2_CPTAC_PROGRAM_SUMMARY_V2.csv",
+      "size_bytes": 4609,
+      "sha256": "c566c6d3ee19bfa2f928c4bbee8cd1475eef4943489e84c1c4e0b944b50fcbbd"
+    },
+    {
+      "relative_path": "tables/TABLE2_CPTAC_PROGRAM_SUMMARY_V2.md",
+      "size_bytes": 7888,
+      "sha256": "af2a4304ba27de9c7fff0c262e027fc250de1db1951ffe99452c22a3b3d9c996"
+    },
+    {
+      "relative_path": "figures/fig01_primary_concordance_heatmap.pdf",
+      "size_bytes": 65740,
+      "sha256": "6ac92a9e554d6cb0057d80bda4d37659ce88f07f6ae3acb3ae0d1dfdee7ff3f4"
+    },
+    {
+      "relative_path": "figures/fig01_primary_concordance_heatmap.png",
+      "size_bytes": 165290,
+      "sha256": "f2e92b7f4a254f199732b332113cbbbebc66da43a118dc65103c51aae41786ae"
+    },
+    {
+      "relative_path": "figures/fig02_gene_vs_feature_sensitivity.pdf",
+      "size_bytes": 17238,
+      "sha256": "b248c19b6b056d9e2fb4aea4a73bfccc2f0985a723399394b21735da1e8a3f0f"
+    },
+    {
+      "relative_path": "figures/fig02_gene_vs_feature_sensitivity.png",
+      "size_bytes": 168358,
+      "sha256": "4ff07aa1172f2398325bc5824c678a2d06dd194135594a7f0713ee522fb0ea15"
+    },
+    {
+      "relative_path": "figures/fig03_matched_case_denominators.pdf",
+      "size_bytes": 14621,
+      "sha256": "aa7e2467ce004a3e748613ab1960c808e3885055cf088e740578fa967cce65ad"
+    },
+    {
+      "relative_path": "figures/fig03_matched_case_denominators.png",
+      "size_bytes": 95915,
+      "sha256": "d3ba14d62e767c11d7a19dd0d7aa178d7c6e61ebfd74e88149951d4ddf85c17b"
+    },
+    {
+      "relative_path": "figures/spatial/fig_spatial_brca_sample_medians_v2.png",
+      "size_bytes": 98165,
+      "sha256": "4ffde49f9279aca809d9252925a0283fa4b7ae712dbeeaad5d1fef167e26da52"
+    },
+    {
+      "relative_path": "figures/tcga/fig15_tcga_xena_68immune_sensitivity_heatmap_v0_5.png",
+      "size_bytes": 431949,
+      "sha256": "91e60d520168bfeb2580bb9e643840e63862a7c448236354cee8df664a906c82"
+    },
+    {
+      "relative_path": "figures/tcga/fig16_tcga_xena_immune_subtype_median_heatmap_v0_5.png",
+      "size_bytes": 99285,
+      "sha256": "34cab1fdeb6d92b1e1a601779951957e2a19c0581adce708b01ba5bece262877"
+    },
+    {
+      "relative_path": "manuscript/BIO-05_FIGURE_LEGENDS_V2.md",
+      "size_bytes": 1836,
+      "sha256": "e04a0386c3b0c3e9619d3cedbcfebcccdc1d1aabe4f1ca35172507703e2bd7c6"
+    },
+    {
+      "relative_path": "manuscript/BIO-05_METHODS_RESULTS_V2.md",
+      "size_bytes": 13913,
+      "sha256": "e9786ccab132134a00d08fd1b30426f3d0f9853c9f2d2d3c750ea368895b3ac2"
+    },
+    {
+      "relative_path": "local_audit/BIO-05_INDEPENDENT_AUDIT.md",
+      "size_bytes": 1595,
+      "sha256": "065c64924923ee13017e6809dce0e24e5bd6c9c787679cc8eadc1fcfeb685f78"
+    },
+    {
+      "relative_path": "local_audit/RERUN_CONSISTENCY.json",
+      "size_bytes": 3302,
+      "sha256": "3b69e39e7ba6b6e851ddb6e711a42755af194f9c31cbdc0717c6dcb63278ca6a"
+    },
+    {
+      "relative_path": "local_audit/SCRNA_STREAMING_CROSSCHECK.json",
+      "size_bytes": 930,
+      "sha256": "e76d4d5ef53f82abf96e3b0422b7d3e15bf586ae494a99e4cce1c7ea55d4cd91"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/figures/fig01_primary_concordance_heatmap.pdf",
+      "size_bytes": 65740,
+      "sha256": "38da9812e4dc37d206bf3fa249143361298486723f4aaf09de737e7dca58db69"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/figures/fig01_primary_concordance_heatmap.png",
+      "size_bytes": 165290,
+      "sha256": "f2e92b7f4a254f199732b332113cbbbebc66da43a118dc65103c51aae41786ae"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/figures/fig02_gene_vs_feature_sensitivity.pdf",
+      "size_bytes": 17238,
+      "sha256": "4db2e6330ed91fcbce8b2a3c7f3f38b1fff2cf8cbe76561d42908a164101c4b5"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/figures/fig02_gene_vs_feature_sensitivity.png",
+      "size_bytes": 168358,
+      "sha256": "4ff07aa1172f2398325bc5824c678a2d06dd194135594a7f0713ee522fb0ea15"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/figures/fig03_matched_case_denominators.pdf",
+      "size_bytes": 14621,
+      "sha256": "b5db28290ec06115872fe25ca71b13cf488247e413b899f2560cea229b9ccc25"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/figures/fig03_matched_case_denominators.png",
+      "size_bytes": 95915,
+      "sha256": "d3ba14d62e767c11d7a19dd0d7aa178d7c6e61ebfd74e88149951d4ddf85c17b"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_complete_denominator_flow_v2.csv",
+      "size_bytes": 13038,
+      "sha256": "e038d17536fd8a38fda8469738f51d15545a2140c3c1bed783648522dbf50dfa"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_context_features_recomputed_v2.csv",
+      "size_bytes": 95867,
+      "sha256": "db540e0c511705d3cbaf80842c61bd1355ddb93fe2d4e9564a64dec27810b108"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_context_input_files_v2.csv",
+      "size_bytes": 5076,
+      "sha256": "35b8204bd9484b8d82d000928f4dfef3205b3086ec682fac7151d9590afc5a75"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_duplicate_priority_audit_v2.csv",
+      "size_bytes": 308536,
+      "sha256": "833ce30a847467deecb98a505a20fadc1353b30a7c4ef155abf6106509480ff2"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_feature_row_sensitivity_registry_v2.csv",
+      "size_bytes": 65210,
+      "sha256": "0dfd5152c7d835d9ac494fbe38ae9440dc2ad0bf06a6f01cb5777195244b00a8"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_gene_recovery_v2.csv",
+      "size_bytes": 86310,
+      "sha256": "67815631b3daff92d1c1f33eaf5b0a1e099b33e3deaf30e396c2072daba1d7a8"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_heterogeneity_summary_v2.csv",
+      "size_bytes": 4609,
+      "sha256": "c566c6d3ee19bfa2f928c4bbee8cd1475eef4943489e84c1c4e0b944b50fcbbd"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_input_files_v2.csv",
+      "size_bytes": 8993,
+      "sha256": "04f6dbfac0d5e87a7bec44987e7db4e6aeac59ab48d6efffa2b8d0b19cde172f"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_internal_validation_v2.json",
+      "size_bytes": 612,
+      "sha256": "11684fafe02b8eb3bf76f52571d1350768f6477c23988c74c63766fa50b32164"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_leave_one_cancer_out_v2.csv",
+      "size_bytes": 10379,
+      "sha256": "5a7674d239f68a94368498c5446a0303ac8d32f65bb7040cb726f47fc5edda67"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_matched_gene_equal_scores_v2.csv",
+      "size_bytes": 2024565,
+      "sha256": "f4ea781d54260687dab89ce93216f2daa0458978c13834dba937cb611a1a4c0b"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_primary_concordance_registry_v2.csv",
+      "size_bytes": 67935,
+      "sha256": "7a2dd33847989970c26e676a2f217b432e004b37763ae7b4c85dfa88a2b09641"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_program_scores_v2.csv",
+      "size_bytes": 3465180,
+      "sha256": "8cf514f83a093fb45b9142a65cce02261c34a8897e24a46c0deafc9615c03563"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_residual_context_registry_v2.csv",
+      "size_bytes": 135235,
+      "sha256": "956034f6174a416d3fed4e4954e44d854f40f18ee5ab126855d5dd13147848f5"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_residual_model_diagnostics_v2.csv",
+      "size_bytes": 41196,
+      "sha256": "b15d7395313d29fa836dd82a3aa4272dc31f93c1ee849d3a1ccaad0b8ba8147b"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_residual_scores_v2.csv",
+      "size_bytes": 1737021,
+      "sha256": "ae5e658551bef39b4741528ee81e22fb0493efcf8db89540ba276e1021cd488a"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_results_summary_v2.json",
+      "size_bytes": 1534,
+      "sha256": "1116fb9793341542a0a79640feb67c458fe793e88b02680b384ed345b0cbe8d4"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_sample_mapping_crosscheck_v2.csv",
+      "size_bytes": 849,
+      "sha256": "6e069166db45652fcee781d40c51872de90a6b2e7c2b7190538be37f4d67d874"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_selected_sample_map_v2.csv",
+      "size_bytes": 125912,
+      "sha256": "6b9c58e7bc566e12cdbe6f6b4e6d9e8535208fbd66e82ed3d84a6e2c44576b02"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_threshold1_sensitivity_registry_v2.csv",
+      "size_bytes": 71146,
+      "sha256": "4697cb4a4270af460f48b8e23acbe25befba3bb003aa2aae3e17a9ace2ff9101"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/results/cptac/cptac_within_cancer_standardized_pooled_sensitivity_v2.csv",
+      "size_bytes": 3061,
+      "sha256": "7d5d81e6f8bb5dcf7591f83d59713e99a9ee80aa0ece17034c03dbb6ddd3cf13"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/tables/SUPPLEMENT_TABLE_S1_PRIMARY_REGISTRY_V2.csv",
+      "size_bytes": 67935,
+      "sha256": "7a2dd33847989970c26e676a2f217b432e004b37763ae7b4c85dfa88a2b09641"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/tables/SUPPLEMENT_TABLE_S2_SCORING_SENSITIVITY_V2.csv",
+      "size_bytes": 65210,
+      "sha256": "0dfd5152c7d835d9ac494fbe38ae9440dc2ad0bf06a6f01cb5777195244b00a8"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/tables/SUPPLEMENT_TABLE_S3_RESIDUAL_CONTEXT_V2.csv",
+      "size_bytes": 135235,
+      "sha256": "956034f6174a416d3fed4e4954e44d854f40f18ee5ab126855d5dd13147848f5"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/tables/TABLE1_CPTAC_CASE_FLOW_V2.csv",
+      "size_bytes": 714,
+      "sha256": "d018d4c550859ec3158e757ffa854bfee31f54e11c8c0c6db9335d1dc7eee97c"
+    },
+    {
+      "relative_path": "local_audit/rerun_execution/tables/TABLE2_CPTAC_PROGRAM_SUMMARY_V2.csv",
+      "size_bytes": 4609,
+      "sha256": "c566c6d3ee19bfa2f928c4bbee8cd1475eef4943489e84c1c4e0b944b50fcbbd"
+    },
+    {
+      "relative_path": "local_audit/scrna_reference/scrna_dataset_cancer_signature_summary_v0_7.csv",
+      "size_bytes": 2290,
+      "sha256": "f0a958dd50e969a8b2be16a8c3ebf25a48a03a86a30d88117a0e82c2c7e0cf8f"
+    },
+    {
+      "relative_path": "local_audit/scrna_reference/scrna_group_counts_v0_7.csv",
+      "size_bytes": 4617,
+      "sha256": "5b85619f116ae8874d85dc80dcbfbae364cbde72815a8f5b65a0b41c056f2eb6"
+    },
+    {
+      "relative_path": "local_audit/scrna_reference/scrna_pairwise_contrasts_v0_7.csv",
+      "size_bytes": 6413,
+      "sha256": "5047c258137e5b13cfd2448855e3ab14653834b5f1563edef070cdb848ea433a"
+    },
+    {
+      "relative_path": "local_audit/scrna_reference/scrna_queue_audit_v0_7.csv",
+      "size_bytes": 497,
+      "sha256": "a80eb938a3a63f10dacdad813ceb8d530f838827b979e5c12a41ec0b29ed3ef9"
+    },
+    {
+      "relative_path": "local_audit/scrna_reference/scrna_schema_audit_v0_7.csv",
+      "size_bytes": 1144,
+      "sha256": "fe9a4b9dfa11ad449164cb8198ca4ec97edd631c5c3a2c4e0059d2e37cae3f3e"
+    },
+    {
+      "relative_path": "local_audit/scrna_reference/scrna_signature_scores_v0_7.csv",
+      "size_bytes": 46780,
+      "sha256": "a82c889294049611d566c985d86b262bba2927edff32f068e473478fc92da641"
+    },
+    {
+      "relative_path": "local_audit/scrna_reference_figures/fig_scrna_immune_minus_malignant_heatmap_v0_7.png",
+      "size_bytes": 85656,
+      "sha256": "a8ecd95ddd914da8efaf2a11e205b452a8af4581c594290fa3778743edf157a4"
+    },
+    {
+      "relative_path": "local_audit/scrna_reference_report.md",
+      "size_bytes": 3373,
+      "sha256": "d1820ed92d6b8310c2e6e19e1ea9186825b29f75bc71acf367f9e23569f09d45"
+    },
+    {
+      "relative_path": "local_audit/scrna_smoke/results/scrna/scrna_dataset_cancer_signature_summary_v0_7.csv",
+      "size_bytes": 2285,
+      "sha256": "5ec0b8c17d401ef853ee16471110edd78fb64cbab4cb62b0070767cde12d5206"
+    },
+    {
+      "relative_path": "local_audit/scrna_smoke/results/scrna/scrna_group_counts_v0_7.csv",
+      "size_bytes": 4617,
+      "sha256": "7398508dc2ade4dd62f83f7ee454ec57cd022a19fdafe8ac9490ddc70d3901fc"
+    },
+    {
+      "relative_path": "local_audit/scrna_smoke/results/scrna/scrna_pairwise_contrasts_v0_7.csv",
+      "size_bytes": 7071,
+      "sha256": "ceeda402c31c64a0c5ac8c37222a1815c9e958e51568c8e2e91bc1a7cf8c304b"
+    },
+    {
+      "relative_path": "local_audit/scrna_smoke/results/scrna/scrna_queue_audit_v0_7.csv",
+      "size_bytes": 494,
+      "sha256": "ed490cb9e8e4f9e1b1ec63590cc8e73b95ec8237f6a913089550603060504c78"
+    },
+    {
+      "relative_path": "local_audit/scrna_smoke/results/scrna/scrna_schema_audit_v0_7.csv",
+      "size_bytes": 1144,
+      "sha256": "fe9a4b9dfa11ad449164cb8198ca4ec97edd631c5c3a2c4e0059d2e37cae3f3e"
+    },
+    {
+      "relative_path": "local_audit/scrna_smoke/results/scrna/scrna_signature_scores_v0_7.csv",
+      "size_bytes": 46763,
+      "sha256": "0482b959f6e8af1389cdb1c7781b5389733f9fac21451da82036b2093860565c"
+    },
+    {
+      "relative_path": "local_audit/scrna_smoke_queue.tsv",
+      "size_bytes": 448,
+      "sha256": "dfbe83752a8bdd66079e6ae4edda5d15599e27ca00fc12e223a2facf2779ca13"
+    }
+  ],
+  "validation_status": "PASS",
+  "statistics_audit_cycle": {
+    "cycle": "STAT-R1",
+    "status": "P0_P1_CLOSED",
+    "audit_source": "<LOCAL_PATH:BIO-05_INITIAL_STAT_AUDIT.md>",
+    "revision_record": "<LOCAL_PATH:finding_adjudication.json>",
+    "rerun_core_outputs_byte_identical": "7/7"
+  }
+}

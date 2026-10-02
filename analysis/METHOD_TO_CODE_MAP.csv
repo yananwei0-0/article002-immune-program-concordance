@@ -1,0 +1,11 @@
+method_component,entrypoint,key_function_or_output,locked_publication_target
+CPTAC program construction and primary concordance,code/run_cptac_v2.py,score_matrix/build_registry/results/cptac/cptac_primary_concordance_registry_v2.csv,tables/supplementary/S3_Primary.csv
+CPTAC scoring and robustness,code/run_cptac_v2.py,feature-row/threshold/pooled/leave-one-case outputs,tables/supplementary/S4a_FeatureSens.csv through S4d_ResidualDiag.csv
+CPTAC residual context,code/run_cptac_v2.py,results/cptac/cptac_residual_context_registry_v2.csv,tables/supplementary/S5_ResidualContext.csv
+TCGA 68-immune correlation atlas,code/current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_5_tcga_sensitivity.py,compute_signature_scores/correlate_68immune,tables/supplementary/S6a_TCGA_Full.csv
+TCGA subtype sensitivity,code/current_p2_closure/executed_code/run_pan_cancer_proteomic_immune_evasion_v0_5_tcga_sensitivity.py,subtype tests and summaries,tables/supplementary/S6d_TCGA_Subtypes.csv
+APOLLO external concordance,code/current_p2_closure/executed_code/run_bio05_apollo_external_cohort_v0_7.py,build_concordance/results/apollo/apollo_concordance_v0_7.csv,tables/supplementary/S7_APOLLO.csv
+Single-cell and spatial scoring,code/run_h5ad_support_v2.py,process_scrna/process_spatial,tables/supplementary/S8a_scRNA_Global.csv through S9_Spatial_BRCA.csv
+3CA donor-compartment mapping,code/current_p2_closure/executed_code/run_bio05_3ca_source_mapping_v0_8.py,process_dataset/results/threeca/,tables/supplementary/S8b_scRNA_Source.csv
+Support-layer assembly and BH correction,code/postprocess_support_v2.py,results/scrna_combined and results/apollo registries,tables/supplementary/S7_APOLLO.csv through S8b_scRNA_Source.csv
+Locked-table numerical parity,compare_recomputed_to_locked.py,14 key-based full-column comparisons,analysis/provenance/HISTORICAL_LOCKED_TABLE_PARITY.json

@@ -1,21 +1,23 @@
 {
-  "version": "1.0.0-rc2",
-  "release_candidate_date": "2026-09-29",
+  "version": "1.0.0-rc3",
+  "release_candidate_date": "2026-10-02",
   "technical_validation": "PASS",
-  "scientific_content_alignment": "reviewed",
-  "metadata_prepared_on": "2026-10-02",
-  "public_release_ready": false,
+  "scientific_analysis_layer": "INCLUDED",
+  "historical_locked_table_parity": "14_OF_14_PASS",
+  "public_repository": "https://github.com/yananwei0-0/article002-immune-program-concordance",
+  "submission_repository_ready": true,
+  "archival_doi_required_for_submission": false,
   "resolved_items": [
+    "principal scientific analysis code",
+    "publication figure and table code",
+    "prepared-input layout and public source locators",
+    "locked-table numerical parity gate",
     "scoped dual license",
-    "source-terms and non-redistribution audit",
     "repository URL",
-    "interim CITATION.cff",
-    "full technical validation rerun"
+    "collective-author CITATION.cff"
   ],
-  "blocking_items": [
-    "review-anonymity decision and named author metadata",
-    "archived release DOI",
-    "final named-author and DOI citation metadata",
-    "repository public-visibility decision"
+  "nonblocking_future_metadata": [
+    "named author list",
+    "optional archived release DOI"
   ]
 }
